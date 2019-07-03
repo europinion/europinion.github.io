@@ -86,9 +86,8 @@ d3sparql.loadXMLDoc = function() {
 }
 
 d3sparql.myFunction = function(xml) {
-  var convert = require('./lib/xml2json.js');
   var options = {ignoreComment: true, alwaysChildren: true};
-  var result = convert.xml2json(xml, options);
+  var result = xml2json(xml, options);
   console.log(result);
 }
 
