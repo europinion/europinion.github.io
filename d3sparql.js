@@ -75,7 +75,7 @@ d3sparql.fetch = function(url, callback) {
 */
 }
 
-function loadXMLDoc() {
+d3sparql.loadXMLDoc = function() {
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
      // myFunction(this);
@@ -85,15 +85,15 @@ function loadXMLDoc() {
   xmlhttp.send();
 }
 
-function myFunction(xml) {
+d3sparql.myFunction = function(xml) {
   var convert = require('./lib/xml2json.js');
   var options = {ignoreComment: true, alwaysChildren: true};
   var result = convert.xml2json(xml, options)
   console.log(result);
 }
 
-d3sparql.query = function(endpoint, sparql, callback) {
-  loadXMLDoc()
+d3sparql.query = function() {
+  d3sparql.loadXMLDoc()
 }
 
 
