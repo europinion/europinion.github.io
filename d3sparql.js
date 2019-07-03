@@ -12,6 +12,8 @@ var d3sparql = {
   debug: false  // set to true for showing debug information
 }
 
+var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+
 /*
   Execute a SPARQL query and pass the result to a given callback function
 
@@ -73,10 +75,25 @@ d3sparql.fetch = function(url, callback) {
 */
 }
 
+function loadXMLDoc() {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+     // myFunction(this);
+     console.log(this)
+  };
+  xmlhttp.open("GET", "./testdata.xml" , true);
+  xmlhttp.send();
+}
+
+function myFunction(xml) {
+  var convert = require('./lib/xml-json/xml2json.js');
+  var options = {ignoreComment: true, alwaysChildren: true};
+  var result = convert.xml2json(xml, options)
+  console.log(result);
+}
+
 d3sparql.query = function(endpoint, sparql, callback) {
-  var url = endpoint + "?query=" + encodeURIComponent(sparql)
-  if (d3sparql.debug) { console.log(endpoint) }
-  d3sparql.fetch(url, callback)
+  loadXMLDoc()
 }
 
 
