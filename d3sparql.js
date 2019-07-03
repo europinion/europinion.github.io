@@ -86,7 +86,7 @@ function loadXMLDoc() {
 }
 
 function myFunction(xml) {
-  var convert = require('./lib/xml-json/xml2json.js');
+  var convert = require('./lib/xml2json.js');
   var options = {ignoreComment: true, alwaysChildren: true};
   var result = convert.xml2json(xml, options)
   console.log(result);
