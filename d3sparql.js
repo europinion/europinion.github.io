@@ -79,7 +79,7 @@ d3sparql.loadXMLDoc = function() {
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
      // myFunction(this);
-     console.log(this);
+     d3sparql.myFunction(this);
   };
   xmlhttp.open("GET", "./testdata.xml" , true);
   xmlhttp.send();
