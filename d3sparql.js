@@ -12,7 +12,7 @@ var d3sparql = {
   debug: false  // set to true for showing debug information
 }
 
-var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+/* var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest; */
 
 /*
   Execute a SPARQL query and pass the result to a given callback function
