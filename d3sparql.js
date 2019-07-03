@@ -12,6 +12,8 @@ var d3sparql = {
   debug: false  // set to true for showing debug information
 }
 
+var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+
 /*
   Execute a SPARQL query and pass the result to a given callback function
 
@@ -91,7 +93,7 @@ d3sparql.myFunction = function(xml) {
 }
 
 d3sparql.query = function() {
-  console.log('Hi');
+  d3sparql.loadXMLDoc()
 }
 
 
