@@ -79,7 +79,7 @@ d3sparql.loadXMLDoc = function() {
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
      // myFunction(this);
-     console.log(this)
+     console.log(this);
   };
   xmlhttp.open("GET", "./testdata.xml" , true);
   xmlhttp.send();
@@ -88,12 +88,12 @@ d3sparql.loadXMLDoc = function() {
 d3sparql.myFunction = function(xml) {
   var convert = require('./lib/xml2json.js');
   var options = {ignoreComment: true, alwaysChildren: true};
-  var result = convert.xml2json(xml, options)
+  var result = convert.xml2json(xml, options);
   console.log(result);
 }
 
 d3sparql.query = function() {
-  d3sparql.loadXMLDoc()
+  console.log('Hi');
 }
 
 
