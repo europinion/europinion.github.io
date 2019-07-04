@@ -4136,7 +4136,7 @@ body {
   background-color: #ffffff;
 }
 .cid-rvi1tSm6Ek .mbr-text {
-  color: #767676;
+  color: #1b1e23;
   margin: 0;
   padding-top: 1.5rem;
   text-align: center;
@@ -4169,6 +4169,9 @@ body {
 }
 .cid-rvi14xLdwP .card-wrapper {
   height: 100%;
+}
+.cid-rvi14xLdwP P {
+  color: #1b1e23;
 }
 .cid-rvgZMVDNg8 .navbar {
   padding: .5rem 0;
