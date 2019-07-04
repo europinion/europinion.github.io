@@ -63,7 +63,7 @@
     </nav>
 </section>
 
-<section class="engine"><a href="https://mobirise.info/t">amp templates</a></section><section class="timeline2 cid-rvh8bvybZa" id="timeline2-8">
+<section class="engine"><a href="https://mobirise.info/l">free website templates</a></section><section class="timeline2 cid-rvh8bvybZa" id="timeline2-8">
 
     
 
@@ -104,14 +104,14 @@
                 </div>
             </div>
             <!--3-->
-            <div class="row timeline-element reverse">
+            <div class="row timeline-element reverse separline">
                 <span class="iconsBackground">
-                    <span class="mbr-iconfont mbri-edit"></span>
+                    <span class="mbr-iconfont mbri-help"></span>
                 </span>
                 <div class="col-xs-12 col-md-6 align-left">
                     <div class="timeline-text-content">
                         <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">
-                            Translating Data</h4>      
+                            Translating Tweets</h4>      
                         <p class="mbr-timeline-text mbr-fonts-style display-7">
                             Since the tool we used to perform the sentiment analysis takes as input sentences exclusively in English, it was necessary to translate our tweets written in the 24 official languages of the EU into English. In order to automatically translate the huge amount of tweets we have gathered we utilized the Yandex.Translate API, which allowed us to perform the translation of our dataset automatically. See the full code for the translation here (Translating.py)
                         </p>
@@ -119,13 +119,57 @@
                 </div>
             </div>
             <!--4-->
-            
+            <div class="row timeline-element  separline">
+                <span class="iconsBackground">
+                    <span class="mbr-iconfont mbri-hearth"></span>
+                </span>
+                <div class="col-xs-12 col-md-6 align-left ">
+                    <div class="timeline-text-content">
+                        <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">Analysing Sentiment</h4>
+                        <p class="mbr-timeline-text mbr-fonts-style display-7">The tool we used to perform the sentiment analysis is called Sentilo (wit.istc.cnr.it). Sentilo performs sentence-based sentiment analysis. It takes a sentence as input as gives you back the positive or negative and average score. Additionally, sentilo relies on FRED to automatically mine a knowledge graph for the sentence. FRED is a succesful machine reader for the Semantic Web. The knowledge graphs is given back in various possible formats, such as png, rdf, xml, json, turtle, N3, NT.  <br>Our problem concerned finding a way to analyse in an automatic way the parsed text of every tweet we had previously collected. For this reason, we created a script to send a get request to sentilo with the tweet to get back the knowledge graph. (see the script here: sentilo.py)</p>
+                    </div>
+                </div>
+            </div>
             <!--5-->
-            
+            <div class="row timeline-element reverse separline">
+                <span class="iconsBackground">
+                    <span class="mbr-iconfont mbri-add-submenu"></span>
+                </span>
+                <div class="col-xs-12 col-md-6 align-left">
+                    <div class="timeline-text-content">
+                        <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">Structuring Information</h4>
+                        <p class="mbr-timeline-text mbr-fonts-style display-7">
+                            (cleaning of data we got from Sentilo to create the named graph and use the dataset for sparql queries on Fuseki) (script for cleaning and output.xml file)<br><br>Once we have obtained the knowledge graphs for the single tweets, we wanted to merge all the single graphs together to get one single graph. In order to do that, we created a named graph. How? (named_graph.py)&nbsp;<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
             <!--6-->
-            
+            <div class="row timeline-element separline">
+                <span class="iconsBackground">
+                    <span class="mbr-iconfont mbri-idea"></span>
+                </span>
+                <div class="col-xs-12 col-md-6 align-left ">
+                    <div class="timeline-text-content">
+                        <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">
+                            Gaining Knowledge</h4>
+                        <p class="mbr-timeline-text mbr-fonts-style display-7">Fuseki<br>....<br><br>Sparql queries<br>....<br></p>
+                    </div>
+                </div>
+            </div>
             <!--7-->
-            
+            <div class="row timeline-element reverse">
+                <span class="iconsBackground">
+                    <span class="mbri-responsive mbr-iconfont"></span>
+                </span>
+                <div class="col-xs-12 col-md-6 align-left">
+                    <div class="timeline-text-content">
+                        <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">
+                            Visualising Results&nbsp;</h4>
+                        <p class="mbr-timeline-text mbr-fonts-style display-7">....</p>
+                    </div>
+                </div>
+            </div>
             <!--8-->
             
             <!--9-->
