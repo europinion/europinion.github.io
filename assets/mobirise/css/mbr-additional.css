@@ -1415,12 +1415,12 @@ body {
 }
 .cid-rvgZMVDNg8 .navbar {
   padding: .5rem 0;
-  background: #333333;
+  background: #1b1e23;
   transition: none;
   min-height: 77px;
 }
 .cid-rvgZMVDNg8 .navbar-dropdown.bg-color.transparent.opened {
-  background: #333333;
+  background: #1b1e23;
 }
 .cid-rvgZMVDNg8 a {
   font-style: normal;
@@ -1511,7 +1511,7 @@ body {
   padding-bottom: 0;
 }
 .cid-rvgZMVDNg8 .dropdown .dropdown-menu {
-  background: #333333;
+  background: #1b1e23;
   display: none;
   position: absolute;
   min-width: 5rem;
