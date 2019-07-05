@@ -150,7 +150,13 @@
                     <div class="timeline-text-content">
                         <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">
                             Gaining Knowledge</h4>
-                        <p class="mbr-timeline-text mbr-fonts-style display-7">Fuseki<br>....<br><br>Sparql queries<br>....<br></p>
+                        <p class="mbr-timeline-text mbr-fonts-style display-7"><b>Fuseki</b><br>Apache Jena Fuseki <a href="https://jena.apache.org/documentation/fuseki2/"></a> is the SPARQL server we used to create and run SPARQL queries over our database. We run Fuseki as a Java web application (WAR file) by means of Apache Tomcat <a href="https://tomcat.apache.org/"></a>. 
+                          <br><br><b>Sparql queries</b><br>We provide some examples of possible SPARQL queries than the user could make to retrieve relevant information from our final knowledge graph containing the data from all the tweets. The queries focus on the core aspects of our project:<ul> 
+                          <li>the lang as the criterion used for the collection of tweets;</li>
+                          <li>the positive and negative score returned by Sentilo as the result of the sentiment analysis;</li>
+                          <li>the quantity of tweets to make some statistics.</li>
+                      </li>
+<br></p>
                     </div>
                 </div>
             </div>
@@ -163,7 +169,7 @@
                     <div class="timeline-text-content">
                         <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">
                             Visualising Results&nbsp;</h4>
-                        <p class="mbr-timeline-text mbr-fonts-style display-7">....</p>
+                        <p class="mbr-timeline-text mbr-fonts-style display-7">Finally, we used the results of the SPARQL queries to build a range of visualisations. The JavaScript library D3 was the main tool we used to implement interactive and dynamic visualisations. </p>
                     </div>
                 </div>
             </div>
