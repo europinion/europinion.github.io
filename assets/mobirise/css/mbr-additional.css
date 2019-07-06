@@ -701,7 +701,7 @@ blockquote {
 }
 pre {
   background: #ffffff;
-  padding: 10px 24px;
+  padding: 10px 10px;
   white-space: pre-wrap;
 }
 .inactive {
