@@ -63,7 +63,7 @@
 
     <div class="container">
         <div class="media-container-row">
-            <div class="title col-12 col-md-8">
+            <div class="title col-12 col-l-8">
                 <h2 class="align-center pb-3 mbr-fonts-style display-2"><strong>Visualisation</strong></h2>
                 <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5">SPARQL query results in pretty.</h3>
 
@@ -80,7 +80,7 @@
     <div class="container">
         <h2 class="mbr-section-title align-center pb-5 mbr-fonts-style display-5">Contextual Similar Graph 1</h2>
         <div class="media-container-row">
-            <div class="col-12 col-md-8">
+            <div class="col-12 col-l-8">
                 <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item"><a class="nav-link mbr-fonts-style show active display-7" role="tab" data-toggle="tab" href="#tabs2-1t_tab0" aria-selected="true">
                             Graph 1</a></li>
@@ -158,7 +158,7 @@
     <div class="container">
         <h2 class="mbr-section-title align-center pb-5 mbr-fonts-style display-5">Contextual Similar Graph 2</h2>
         <div class="media-container-row">
-            <div class="col-12 col-md-8">
+            <div class="col-12 col-l-8">
                 <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item"><a class="nav-link mbr-fonts-style show active display-7" role="tab" data-toggle="tab" href="#tabs2-1u_tab0" aria-selected="true">Graph 1</a></li>
                     <li class="nav-item"><a class="nav-link mbr-fonts-style show active display-7" role="tab" data-toggle="tab" href="#tabs2-1u_tab1" aria-selected="true">Graph 2<br></a></li>
@@ -236,7 +236,7 @@
     <div class="container">
         <h2 class="mbr-section-title align-center pb-5 mbr-fonts-style display-5">Contextual Similar Graph 2</h2>
         <div class="media-container-row">
-            <div class="col-12 col-md-8">
+            <div class="col-12 col-l-8">
                 <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item"><a class="nav-link mbr-fonts-style show active display-7" role="tab" data-toggle="tab" href="#tabs2-1u_tab0" aria-selected="true">Graph 1</a></li>
                     <li class="nav-item"><a class="nav-link mbr-fonts-style show active display-7" role="tab" data-toggle="tab" href="#tabs2-1u_tab1" aria-selected="true">Graph 2<br></a></li>
@@ -363,6 +363,14 @@
             display: true,
             text: 'Chart.js Scatter Chart'
           },
+          scales: {
+              xAxes: [{
+                  ticks: {
+                    reverse: true,
+                    beginAtZero: true
+                  }
+              }]
+          }
         }
       });
     };
