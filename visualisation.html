@@ -366,8 +366,16 @@
           scales: {
               xAxes: [{
                   ticks: {
+                    max : -1,
+                    min : 0,
                     reverse: true,
-                    beginAtZero: true
+
+                  }
+              }],
+              yAxes: [{
+                  ticks: {
+                    max : 1,
+                    min : 0
                   }
               }]
           }
