@@ -1912,7 +1912,7 @@ body {
   text-align: center;
 }
 .cid-rvsIbuD2aZ {
-  padding-top: 0px;
+  padding-top: 15px;
   padding-bottom: 120px;
   background-color: #ffffff;
 }
@@ -1922,6 +1922,9 @@ body {
 }
 .cid-rvsIbuD2aZ .mbr-text {
   color: #1b1e23;
+}
+.cid-rvsIbuD2aZ .mbr-text P {
+  text-align: center;
 }
 .cid-rvh7pWUyp3 {
   padding-top: 30px;
