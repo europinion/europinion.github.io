@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
 
   <!-- Highlight.js -->
-  <link rel="stylesheet" href="assets/highlightjs/highlight.css">
+  <link rel="stylesheet" href="assets/highlightjs/highlight2.css">
   <script src="assets/highlightjs/highlight.pack.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
 
@@ -202,7 +202,7 @@
     for index, row in df.iterrows():
         line = row["created_at"]
         row["created_at"] = line[:7] + '2019 ' + line[7:]
-        
+
         tmp_parsed_text = p.clean(row["full_text"])
         tmp_emoji = re.findall(emoji_pattern, tmp_parsed_text)
 
