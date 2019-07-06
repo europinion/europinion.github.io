@@ -23,28 +23,6 @@
   <!-- Chart.js -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
-  <script>
-    var ctx = document.getElementById('myChart').getContext('2d');
-    var chart = new Chart(ctx, {
-        // The type of chart we want to create
-        type: 'line',
-
-        // The data for our dataset
-        data: {
-            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-            datasets: [{
-                label: 'My First dataset',
-                backgroundColor: 'rgb(255, 99, 132)',
-                borderColor: 'rgb(255, 99, 132)',
-                data: [0, 10, 5, 2, 20, 30, 45]
-            }]
-        },
-
-        // Configuration options go here
-        options: {}
-    });
-  </script>
-
 </head>
 <body>
   <section class="menu cid-rvgZMVDNg8" once="menu" id="menu1-k">
@@ -363,6 +341,67 @@
   <script src="assets/smoothscroll/smooth-scroll.js"></script>
   <script src="assets/theme/js/script.js"></script>
 
+  <script>
+		var data = {
+      labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+      datasets: [{
+        label: 'Dataset 1',
+        data: [0, -10, -5, -2, -20, -30, -45]
+      }, {
+        label: 'Dataset 2',
+        data: [0, 10, 5, 2, 20, 30, 45]
+      }]
+		};
+
+		var options = {
+					title: {
+						display: true,
+						text: 'Chart.js Bar Chart - Stacked'
+					},
+					tooltips: {
+						mode: 'index',
+						intersect: false
+					},
+					responsive: true,
+					scales: {
+						xAxes: [{
+							stacked: true,
+						}],
+						yAxes: [{
+							stacked: true
+						}]
+					}
+				};
+
+    var ctx = document.getElementById('myChart').getContext('2d');
+
+		var chart = new Chart(ctx, {
+			type: 'bar',
+			data: data,
+			options: options
+		});
+
+
+    // var ctx = document.getElementById('myChart').getContext('2d');
+    // var chart = new Chart(ctx, {
+    //     // The type of chart we want to create
+    //     type: 'line',
+    //
+    //     // The data for our dataset
+    //     data: {
+    //         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    //         datasets: [{
+    //             label: 'My First dataset',
+    //             backgroundColor: 'rgb(255, 99, 132)',
+    //             borderColor: 'rgb(255, 99, 132)',
+    //             data: [0, 10, 5, 2, 20, 30, 45]
+    //         }]
+    //     },
+    //
+    //     // Configuration options go here
+    //     options: {}
+    // });
+  </script>
 
 </body>
 </html>
