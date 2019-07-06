@@ -99,6 +99,154 @@
                             <div class="col-md-12">
                               <pre>
                                   <code class="python">
+  #### It is maybe necessary to install the libraries first. You can install them as any other Python library.
+  from TwitterAPI import TwitterAPI, TwitterPager
+  import csv
+
+
+  #### Note:
+  #### The script downloads ALL tweets between the 27th May and 2nd June (included). Hence, we have all tweets of one week.
+  #### We can always decide on a later point whether we use all the tweets or not.
+  #### The script does wait if you have reached your request limit. The script indicates the time it has to wait in seconds.
+
+
+  #### First, input Twitter app/api credentials
+  consumer_key='aH6EHC8TvJ6S1AksCciYDVy57'
+  consumer_secret='tCdV1EmwzipXAsm3bIZ34vaI1FRvz6LKPfCb5ewHjY8vvd8dGo'
+  access_token_key='271587996-zaxPcnNBKFWLwKApEfEfwMwbxbes1KkHYdaVRldE'
+  access_token_secret='C4Zto7L8bybTvcZbDSw4kJtbEjB7t3TgMXfVOajqp2oZZ'
+
+  # Nothing to do here.
+  PRODUCT = '30day'
+  LABEL = 'EURELsandbox'
+
+  #### Then, rename the file "en-english.csv" to the language which you are downloading.
+  #### In this way we have separated files for each language.
+  csvFile = open('download.csv', 'a')
+
+  # Nothing to do here. The next lines just prepare the file, i.e. it names the columns.
+  csvWriter = csv.writer(csvFile)
+  csvWriter.writerow(["created_at", "lang", "screen_name", "location", "full_text", "urls", "tags", "mentions", "retweet_count", "favorite_count"])
+
+  # Nothing to do here.
+  count_tweets = 0
+  count_retweets = 0
+  api = TwitterAPI(consumer_key,consumer_secret,access_token_key,access_token_secret)
+
+  #### Now change 'European Elections' in q to the correct query terms. (Leave -filter:retweets as it is.)
+  #### Lastly, either change lang="en" to the correct value or delete lang="en" completely if language is not supported.
+  #### In our gDoc you find a list of the correct Twitter values for lang="". If there is no value in the list, the language is not supported.
+  data = TwitterPager(api, 'tweets/search/%s/:%s' % (PRODUCT, LABEL),
+                  {'query':'European Elections lang:en', 'fromDate':'201905270001', 'toDate':'201905281401'})
+
+  for tweet in data.get_iterator():
+      if 'retweeted_status' not in tweet:
+          count_tweets += 1
+          user = tweet['user']
+          list_tags = [tags['text'] for tags in tweet['entities']['hashtags']]
+          list_tags = ', '.join(list_tags)
+          list_mentions = [mentions['screen_name'] for mentions in tweet['entities']['user_mentions']]
+          list_mentions = ', '.join(list_mentions)
+          list_urls = [urls['expanded_url'] for urls in tweet['entities']['urls']]
+          list_urls = ', '.join(list_urls)
+
+          if 'extended_tweet' in tweet:
+              csvWriter.writerow([tweet['created_at'], tweet['lang'], user['screen_name'], user['location'], tweet['extended_tweet']['full_text'], list_urls, list_tags, list_mentions, tweet['retweet_count'], tweet['favorite_count']])
+          elif 'text' in tweet:
+              csvWriter.writerow([tweet['created_at'], tweet['lang'], user['screen_name'], user['location'], tweet['text'], list_urls, list_tags, list_mentions, tweet['retweet_count'], tweet['favorite_count']])
+
+          print('Yeah, found already a total of',count_tweets,'tweets!')
+
+      elif 'retweeted_status' in tweet:
+          count_retweets += 1
+          print('Ups, that adds up to',count_retweets,'useless retweets...')
+                                  </code>
+                              </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab2" class="tab-pane" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-12">
+                              <pre>
+                                  <code class="python">
+  # -*- coding: utf-8 -*-
+  import pandas as pd
+  import preprocessor as p
+  import string
+  import nltk
+  from nltk.corpus import stopwords
+  import re
+
+  emoji_pattern = re.compile("[" u"\U00002702-\U0001F9F0" "]+", flags=re.UNICODE)
+  p.set_options(p.OPT.URL, p.OPT.MENTION, p.OPT.HASHTAG)
+
+  for file in filenames:
+    df = pd.read_csv(file, delimiter = ";", encoding="utf-8", skiprows=1, names = ["created_at", "lang", "screen_name", "location", "full_text", "urls", "tags", "mentions", "retweet_count", "favorite_count"])
+
+    df["parsed_text"] = ""
+    df["emoji"] = ""
+
+    df["created_at"] = df["created_at"].map(lambda x: x.replace('+0000',''))
+    df["created_at"] = df["created_at"].map(lambda x: x.replace('Mon',''))
+    df["created_at"] = df["created_at"].map(lambda x: x.replace('Tue',''))
+    df["created_at"] = df["created_at"].map(lambda x: x.replace('Wed',''))
+    df["created_at"] = df["created_at"].map(lambda x: x.replace('Thu',''))
+    df["created_at"] = df["created_at"].map(lambda x: x.replace('Fri',''))
+    df["created_at"] = df["created_at"].map(lambda x: x.replace('Sab',''))
+    df["created_at"] = df["created_at"].map(lambda x: x.replace('Sun',''))
+    df["created_at"] = df["created_at"].map(lambda x: x.replace('2019',''))
+    df["created_at"] = df["created_at"].map(lambda x: x.strip())
+
+
+    for index, row in df.iterrows():
+        line = row["created_at"]
+        row["created_at"] = line[:7] + '2019 ' + line[7:]
+        
+        tmp_parsed_text = p.clean(row["full_text"])
+        tmp_emoji = re.findall(emoji_pattern, tmp_parsed_text)
+
+        for emoji in tmp_emoji:
+            tmp_parsed_text = tmp_parsed_text.replace(emoji,"")
+
+        tmp_emoji = ", ".join(tmp_emoji)
+        df.at[index,"emoji"] = tmp_emoji
+
+        tmp_parsed_text= re.sub(" +", " ", tmp_parsed_text)
+        df.at[index,"parsed_text"] = tmp_parsed_text
+
+    print(file)
+    df.to_csv(file, sep = ";", index=False)
+
+  for file in filenames:
+      df = pd.read_csv(file, delimiter = ";", encoding="utf-8", skiprows=1, names = ['created_at', 'lang', 'screen_name', 'location', 'full_text', 'urls', 'tags', 'mentions', 'retweet_count', 'favorite_count', 'parsed_text', 'emoji', 'english'])
+
+      df["clean"] = ""
+
+      for index, row in df.iterrows():
+          stop_words = stopwords.words('english')
+          sentence = str(row["english"])
+          sentence = sentence.lower()
+          sentence = re.sub(r'\d+', '', sentence)
+          sentence = sentence.translate(str.maketrans('', '', string.punctuation))
+          sentence = sentence.strip()
+          sentence = [word for word in sentence.split() if word not in stop_words]
+          sentence = ' '.join(sentence)
+
+          df.at[index,"clean"] = sentence
+
+      print(file)
+      df.to_csv(file, sep = ";", index=False)
+                                  </code>
+                              </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab3" class="tab-pane" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-12">
+                              <pre>
+                                  <code class="python">
   # -*- coding: utf-8 -*-
   import pandas as pd
   import requests
@@ -193,48 +341,102 @@
                             </div>
                         </div>
                     </div>
-                    <div id="tab2" class="tab-pane" role="tabpanel">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p class="mbr-text py-5 mbr-fonts-style display-7">
-                                    INSERT CODE WITH HIGHLIGHT.JS
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="tab3" class="tab-pane" role="tabpanel">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p class="mbr-text py-5 mbr-fonts-style display-7">
-                                    INSERT CODE WITH HIGHLIGHT.JS
-                                </p>
-                            </div>
-                        </div>
-                    </div>
                     <div id="tab4" class="tab-pane" role="tabpanel">
                         <div class="row">
                             <div class="col-md-12">
-                                <p class="mbr-text py-5 mbr-fonts-style display-7">
-                                    INSERT CODE WITH HIGHLIGHT.JS
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="tab5" class="tab-pane" role="tabpanel">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p class="mbr-text py-5 mbr-fonts-style display-7">
-                                    Publish your website to a local drive, FTP or host on Amazon S3, Google Cloud, Github Pages. Don't be a hostage to just one platform or service provider.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="tab6" class="tab-pane" role="tabpanel">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p class="mbr-text py-5 mbr-fonts-style display-7">
-                                    Just drop the blocks into the page, edit content inline and publish - no technical skills required.
-                                </p>
+                              <pre>
+                                  <code class="python">
+  # -*- coding: utf-8 -*-
+  import pandas as pd
+  import requests
+  import time
+
+  # Note:
+  # If you receive a very long error message, the contingent of your key is used.
+  # Follow the lastSuccess instruction to continue at the point of interruption.
+
+  # Here you add the key. (A key can be used for 1.000.000 chr/day and 10.0000.000 chr/month)
+  key = "trnsl.1.1.20190625T093708Z.70b13e001e10312c.9f1c4c27c2359a0dc21d61fc4613c8b0c7887d8d"
+
+  # Uncomment one file at a time to avoid issues.
+  filenames = [   # List of all local files.
+              ]
+
+  ### Function for Saving to CSV ###
+  # Nothing to do here.
+  def saving(response, index):
+      responseJSON = response.json()
+      responseLIST = responseJSON["text"][0].split(" [!] ")
+
+      start = index - len(responseLIST) + 1
+      end = index
+      indices = list(range(start, end + 1))
+      position = 0
+
+      for tweet in indices:
+          df.at[tweet,"english"] = responseLIST[position]
+          position += 1
+
+      print("Saving... lastSuccess:", index)
+      df.to_csv(file, sep = ";", index=False)
+
+  ### Sending Packages to Yandex ###
+  # Nothing to do here.
+  def sending(package, index):
+      text = " [!] ".join(package)
+      lang = "en"
+      data = {"key": key, "text": text, "lang": lang}
+
+      try:
+          response = requests.post("https://translate.yandex.net/api/v1.5/tr.json/translate", data=data)
+          saving(response, index)
+      except requests.exceptions.RequestException as e:
+          print(e)
+          print("Waiting for 60 sec.")
+          time.sleep(60)
+          sending(package, index)
+
+  ### Packaging Tweets with the Seperator " [!] " ###
+  # Nothing to do here.
+  def packaging(lastSuccess = -1):
+      package = []
+      packageCount = 0
+
+      for index, row in df.iterrows():
+          if sum(len(tweets) for tweets in package) < 8500 and index > lastSuccess:
+              package.append(row["parsed_text"])
+          if sum(len(tweets) for tweets in package) >= 8500 and len(df.index) - 1 != index:
+              packageCount += 1
+              print("Sending... Package nr.", packageCount, "– Progress:", round((index / (len(df.index) - 1)) * 100, 2), "%")
+              sending(package, index)
+              package = []
+              time.sleep(5)
+          elif len(df.index) - 1 == index:
+              packageCount += 1
+              print("Sending LAST package for", file, "– Progress:", round((index / (len(df.index) - 1)) * 100, 2), "%")
+              sending(package, index)
+              time.sleep(5)
+
+
+  ### Triggering the Chain of Functions ###
+  # Here you have to uncomment/comment the code depending on if you use a NEW FILE or OLD File.
+  # For OLD FILES you have to add the lastSuccess in the brackets of packaging(lastSuccess)
+  for file in filenames:
+      ### Two types of files:
+
+      ### NEW FILE – NOT opened before -> has no "english" column
+      df = pd.read_csv(file, delimiter = ";", encoding="utf-8", skiprows=1, names = ["created_at", "lang", "screen_name", "location", "full_text", "urls", "tags", "mentions", "retweet_count", "favorite_count", "parsed_text", "emoji"])
+      df["english"] = ""
+      df.to_csv(file, sep = ";", index=False)
+      ### OLD FILE – partially translated
+      df = pd.read_csv(file, delimiter = ";", encoding="utf-8", skiprows=1, names = ["created_at", "lang", "screen_name", "location", "full_text", "urls", "tags", "mentions", "retweet_count", "favorite_count", "parsed_text", "emoji", "english"])
+
+      ### NEW FILE – leave brackets blank: packaging()
+      ### OLD FILE – input is lastSuccess: packaging(lastSuccess)
+      packaging()
+
+                                  </code>
+                              </pre>
                             </div>
                         </div>
                     </div>
