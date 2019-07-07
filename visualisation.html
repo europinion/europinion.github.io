@@ -344,17 +344,16 @@
 
   <script>
 
-    function vis3Data() {
+    function vis3() {
         fetch('visualisation_3.txt')
         .then(function(response){
-            return response.text()
+            let vis3Data = reponse.text()
+            return vis3Data
         })
-        .then(function(data){
-            console.log("Test")
-        })
+        return vis3Data
     }
 
-    console.log(vis3Data())
+    console.log(vis3Data)
 
     var scatterChartData = {
      	datasets: [{	
