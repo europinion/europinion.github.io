@@ -1,0 +1,22 @@
+.graph-section {
+	background-color: transparent;
+}
+
+#graph-container {
+	width: 70%; 
+	height: auto; 
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#graph > div {
+	position:static;
+	text-align: center;
+}
+
+#graph canvas {
+	background-color: #1b1e23;
+	width: 100%!important;
+	height: auto!important;
+	display: inline-block;
+}

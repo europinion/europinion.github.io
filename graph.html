@@ -19,6 +19,8 @@
   <link rel="stylesheet" href="assets/socicon/css/styles.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  <link rel="stylesheet" href="assets/visualisations/style.css">
+
 
   <!-- Force Graph Master -->
   <script src="//unpkg.com/force-graph"></script>
@@ -71,7 +73,11 @@
         </div>
     </div>
 </section>
-<div id="graph" style="z-index: -5;"></div>
+<section class="graph-section">
+        <div id="graph-container">   
+              <div id="graph"></div>
+      </div>
+</section>
 <section class="mbr-section article content1 cid-rvsMYnIVyX" id="content1-1q">
 
 
@@ -109,7 +115,7 @@
 </section>
 
   <script>
-    fetch('assets/visualisations/graph.json').then(res => res.json()).then(data => {
+    fetch('static/assets/visualisations/graph.json').then(res => res.json()).then(data => {
       const elem = document.getElementById('graph');
 
       const Graph = ForceGraph()(elem)
@@ -120,11 +126,6 @@
         .linkDirectionalParticles(2)
         .linkDirectionalParticleWidth(1.4)
         .onNodeHover(node => elem.style.cursor = node ? 'pointer' : null)
-        .onNodeClick(node => {
-          // Center/zoom on node
-          Graph.centerAt(node.x, node.y, 1000);
-          Graph.zoom(8, 2000);
-        });
     });
   </script>
 
