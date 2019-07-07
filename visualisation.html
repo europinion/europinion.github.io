@@ -347,7 +347,7 @@ PREFIX eur: &#60;http://www.europinion.com/&#62;
 
 SELECT ?tweet 
 WHERE {
-?tweet eur:hasLang "de"
+?tweet eur:hasLang "de".
 }
 	    </code>
 	   </pre>
@@ -370,8 +370,8 @@ PREFIX eur: &#60;http://www.europinion.com/&#62;
 
 SELECT ?tweet 
 WHERE {
-  &#60;2019/&#62; eur:lang &#60;2019/sv/&#62;.
-  &#60;2019/sv/&#62; eur:hasTweet ?tweet.
+  &#60;2019/&#62; eur:lang &#60;2019/en/&#62;.
+  &#60;2019/en/&#62; eur:hasTweet ?tweet.
 }
 	    </code>
 	   </pre>      
