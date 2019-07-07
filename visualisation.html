@@ -349,18 +349,15 @@
     var client = new XMLHttpRequest();
     client.open('GET', '/foo.txt');
     client.onreadystatechange = function() {
-      vis3Data = client.responseText;
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
+            var scatterChartData = {
+                datasets: [{    
+                label: 'My First dataset',  
+                data: response.text()
+                }]
+            };
     }
     client.send();
-
-    console.log(vis3Data)
-
-    var scatterChartData = {
-        datasets: [{    
-        label: 'My First dataset',  
-        data: vis3Data
-        }]
-    };
 
     console.log(scatterChartData)
 
