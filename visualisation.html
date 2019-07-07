@@ -346,7 +346,7 @@
 
     var vis3Data;
     fetch('visualisation_3.txt')
-    .then(response => response.text())
+    .then(response => response.json())
     .then(data => vis3Data = data)
 
     console.log(vis3Data)
