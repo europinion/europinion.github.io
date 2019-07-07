@@ -57,8 +57,8 @@
     </nav>
 </section>
 
-<div class="accordion" id="menu"> <!-- start of accordion -->
-<div class="card align-center pb-1 mbr-fonts-style display-2"> <!-- div containing the first collapsible -->
+<div class="accordion bg-white" id="menu"> <!-- start of accordion -->
+<div class="card align-center pb-1 mbr-fonts-style display-2 bg-white"> <!-- div containing the first collapsible -->
 
     <section class="engine"><a href="https://mobirise.info/z">best css templates</a></section><section class="mbr-section content4 cid-rvrS31EJIP" id="content4-18">
 
@@ -310,7 +310,7 @@
 </div> <!-- end of collapse show item 1 #visualisations -->
 </div> <!-- end of collapsible item 1 #visualisations -->
 
-<div class="card align-center pb-1 mbr-fonts-style display-2">  <!-- start of collapsible item 2 #sparql -->
+<div class="card align-center pb-1 mbr-fonts-style display-2 bg-white">  <!-- start of collapsible item 2 #sparql -->
 
   <section class="engine"><a href="https://mobirise.info/z">best css templates</a></section><section class="mbr-section content4 cid-rvrS31EJIP" id="content4-18">
 
@@ -326,7 +326,16 @@
   </section>
 
   <div id="sparql" class="collapse show" data-parent="#menu"> <!--collapse 2 show-->
-	<p> blah blah blah </p>
+    
+    <div class="card" id="CQ1" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">CQ1</h5>
+        <h6 class="card-subtitle mb-2 text-muted">what is...?</h6>
+        <p class="card-text">sparql code.</p>
+        <a href="#" class="card-link">See the results</a>
+      </div>
+    </div>
+	  
   </div> <!-- end of collapse 2 show-->
 
 </div> <!-- end of collapsible item 2 #sparql -->
@@ -419,12 +428,10 @@
       labels: ["bg", "cs", "da", "de", "el", "en", "es", "et", "fi", "fr", "ga", "hr", "hu", "it", "lt", "lv", "mt", "nl", "pl", "pt", "ro", "sk", "sl", "sv"],
       datasets: [{
         label: 'Positive Sentiment',
-        data: [0.10614734848484848, 0.0923741967871486, 0.12254287704632533, 0.10711423340568822, 0.08561559397872404, 0.08987310177705977, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-        backgroundColor: 'rgb(255,204,0)',
+        data: [0.10614734848484848, 0.0923741967871486, 0.12254287704632533, 0.10711423340568822, 0.08561559397872404, 0.08987310177705977, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
       }, {
         label: 'Negative Sentiment',
-        data: [-0.05904545454545454, -0.07450200803212852, -0.05616420361247947, -0.07682996194459414, -0.07073629433727442, -0.06641168551427033, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-        backgroundColor: 'rgb(0,51,153)',
+        data: [-0.05904545454545454, -0.07450200803212852, -0.05616420361247947, -0.07682996194459414, -0.07073629433727442, -0.06641168551427033, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
       }]
 		};
 
@@ -455,6 +462,27 @@
 			data: data,
 			options: options
 		});
+
+
+    // var ctx = document.getElementById('myChart').getContext('2d');
+    // var chart = new Chart(ctx, {
+    //     // The type of chart we want to create
+    //     type: 'line',
+    //
+    //     // The data for our dataset
+    //     data: {
+    //         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    //         datasets: [{
+    //             label: 'My First dataset',
+    //             backgroundColor: 'rgb(255, 99, 132)',
+    //             borderColor: 'rgb(255, 99, 132)',
+    //             data: [0, 10, 5, 2, 20, 30, 45]
+    //         }]
+    //     },
+    //
+    //     // Configuration options go here
+    //     options: {}
+    // });
   </script>
 
     <script>
