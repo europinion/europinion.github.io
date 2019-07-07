@@ -345,16 +345,22 @@
   <script>
 
     var vis3Data;
-    fetch('visualisation_3.txt')
-    .then(response => response.text())
-    .then(data => {
-        var scatterChartData = {
-            datasets: [{    
-            label: 'My First dataset',  
-            data: data
-            }]
-        };
-    })
+
+    var client = new XMLHttpRequest();
+    client.open('GET', '/foo.txt');
+    client.onreadystatechange = function() {
+      vis3Data = client.responseText;
+    }
+    client.send();
+
+    console.log(vis3Data)
+
+    var scatterChartData = {
+        datasets: [{    
+        label: 'My First dataset',  
+        data: vis3Data
+        }]
+    };
 
     console.log(scatterChartData)
 
