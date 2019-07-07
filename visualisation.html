@@ -387,11 +387,18 @@ WHERE {
     <div class="card" id="CQ3" style="width: 25rem;">
       <div class="card-header">CQ3</div>
       <div class="card-body">
-        <h5 class="card-title">what is...?</h5>
+        <h5 class="card-title">How many tweets have been tweeted in “bg”?</h5>
         <p class="card-text">
 	<pre>
 	    <code class="sql sparql-text">
-some code 
+BASE &#60;http://www.europinion.com/&#62;
+PREFIX eur: &#60;http://www.europinion.com/&#62;
+
+SELECT (COUNT(?tweet) AS ?total_tweet)
+WHERE {
+  &#60;2019/&#62; eur:lang &#60;2019/bg/&#62;.
+  &#60;2019/bg/&#62; eur:hasTweet ?tweet.
+}
 	    </code>
 	   </pre>      
 	</p>
@@ -404,11 +411,20 @@ some code
     <div class="card" id="CQ4" style="width: 25rem;">
       <div class="card-header">CQ4</div>
       <div class="card-body">
-        <h5 class="card-title">what is...?</h5>
+        <h5 class="card-title">Which ‘lang’s have more than 10000 tweets?</h5>
         <p class="card-text">
 	  <pre>
 	    <code class="sql sparql-text">
-some code 
+BASE &#60;http://www.europinion.com/&#62;
+PREFIX eur: &#60;http://www.europinion.com/&#62;
+
+SELECT ?lang (COUNT(?tweet) AS ?tweet_count)
+WHERE {
+  &#60;2019/&#62; eur:lang ?lang.
+  ?lang eur:hasTweet ?tweet.
+}
+GROUP BY (?lang)
+HAVING (?tweet_count &#62; 10000)
 	    </code>
 	   </pre>      
 	</p>
@@ -423,11 +439,19 @@ some code
     <div class="card" id="CQ5" style="width: 25rem;">
       <div class="card-header">CQ5</div>
       <div class="card-body">
-        <h5 class="card-title">what is...?</h5>
+        <h5 class="card-title">In which of the lang identified by Twitter people tweeted more?</h5>
         <p class="card-text">
 	  <pre>
 	    <code class="sql sparql-text">
-some code 
+PREFIX eur: &#60;http://www.europinion.com/&#62;
+
+SELECT ?lang (COUNT (?tweet) AS ?tweet_count) 
+WHERE {
+ ?tweet eur:hasLang ?lang.
+}
+GROUP BY (?lang)
+ORDER BY DESC(?tweet_count)
+LIMIT 1 
 	    </code>
 	   </pre>      
 	</p>
@@ -440,11 +464,31 @@ some code
     <div class="card" id="CQ6" style="width: 25rem;">
       <div class="card-header">CQ6</div>
       <div class="card-body">
-        <h5 class="card-title">what is...?</h5>
+        <h5 class="card-title">Which lang among the ones that received more than 10,000 tweets have used the highest number of emojis?</h5>
         <p class="card-text">
 	<pre>
 	    <code class="sql sparql-text">
-some code 
+BASE &#60;http://www.europinion.com/&#62;
+PREFIX eur: &#60;http://www.europinion.com/&#62;
+
+SELECT ?lang 
+(COUNT(?tweet) AS ?tweet_count) 
+(COUNT(?e_tweet) AS ?e_tweet_count)
+(ROUND(?e_tweet_count*100/?tweet_count) AS ?percentage)
+WHERE {
+  {&#60;2019/&#62; eur:lang ?lang.
+   ?lang eur:hasTweet ?tweet.} 
+UNION
+{
+  &#60;2019/&#62; eur:lang ?lang.
+  ?lang eur:hasTweet ?e_tweet.
+  ?e_tweet eur:hasEmoji ?emoji.
+}
+}
+GROUP BY (?lang)
+HAVING (?tweet_count &#62; 10)
+ORDER BY DESC (?percentage)
+LIMIT 1
 	    </code>
 	   </pre>      
 	</p>
@@ -459,11 +503,32 @@ some code
     <div class="card" id="CQ7" style="width: 25rem;">
       <div class="card-header">CQ7</div>
       <div class="card-body">
-        <h5 class="card-title">what is...?</h5>
+        <h5 class="card-title">Which tweet with ‘lang’ set to ‘da’ has the highest average negative score?</h5>
         <p class="card-text">
 	      <pre>
 	    <code class="sql sparql-text">
-some code 
+BASE &#60;http://www.europinion.com/&#62;
+PREFIX eur: &#60;http://www.europinion.com/&#62;
+
+SELECT ?tweet ?avg_score 
+WHERE {
+  {&#60;2019/&#62; eur:lang &#60;2019/da/&#62;.
+   &#60;2019/da/&#62; eur:hasTweet ?tweet.
+   ?tweet eur:hasAvgNegative ?avg_score. 
+   FILTER NOT EXISTS {?tweet eur:hasAvgPositive ?p_score}
+  }
+  UNION
+  {
+  &#60;2019/&#62; eur:lang &#60;2019/da/&#62;.
+  &#60;2019/da/&#62; eur:hasTweet ?tweet.
+  ?tweet eur:hasAvgPositive ?p_score.
+  ?tweet eur:hasAvgNegative ?n_score. 
+  BIND((?n_score+?p_score)/2 as ?avg_score)
+  FILTER(?avg_score &#60;0)
+  }
+}
+ORDER BY ASC (?avg_score)
+LIMIT 1 
 	    </code>
 	   </pre>  
 	 </p>
@@ -476,11 +541,27 @@ some code
     <div class="card" id="CQ8" style="width: 25rem;">
       <div class="card-header">CQ8</div>
       <div class="card-body">
-        <h5 class="card-title">what is...?</h5>
+        <h5 class="card-title">Which tweet has the highest average negative score? </h5>
         <p class="card-text">
 	  <pre>
 	    <code class="sql sparql-text">
-some code 
+BASE &#60;http://www.europinion.com/&#62;
+PREFIX eur: &#60;http://www.europinion.com/&#62;
+
+SELECT ?tweet ?avg_score 
+WHERE {
+  {?tweet eur:hasAvgNegative ?avg_score. 
+   FILTER NOT EXISTS {?tweet eur:hasAvgPositive ?p_score}
+  }
+  UNION
+  {?tweet eur:hasAvgPositive ?p_score.
+   ?tweet eur:hasAvgNegative ?n_score. 
+   BIND((?n_score+?p_score)/2 as ?avg_score)
+   FILTER(?avg_score &#60;0)
+  }
+}
+ORDER BY ASC (?avg_score)
+LIMIT 1
 	    </code>
 	  </pre>        
 	</p>
@@ -495,11 +576,38 @@ some code
     <div class="card" id="CQ9" style="width: 25rem;">
      <div class="card-header">CQ9</div>
       <div class="card-body">
-        <h5 class="card-title">what is...?</h5>
+        <h5 class="card-title">Which lang expressed the highest percentage of average positive tweets?</h5>
         <p class="card-text">
 	  <pre>
 	    <code class="sql sparql-text">
-some code 
+BASE &#60;http://www.europinion.com/&#62;
+PREFIX eur: &#60;http://www.europinion.com/&#62;
+
+SELECT ?lang 
+(COUNT(?tweet) AS ?tweet_count) 
+(COUNT(?p_tweet) AS ?positive_tweets) 
+(ROUND(?positive_tweets*100/?tweet_count) AS ?percentage)
+WHERE {
+  {&#60;2019/&#62; eur:lang ?lang.
+   ?lang eur:hasTweet ?tweet.} 
+UNION
+{
+  &#60;2019/&#62; eur:lang ?lang.
+  ?lang eur:hasTweet ?p_tweet.
+  ?p_tweet eur:hasAvgPositive ?avg_score.
+}
+UNION
+{  &#60;2019/&#62; eur:lang ?lang.
+   ?lang eur:hasTweet ?p_tweet.
+   ?p_tweet eur:hasAvgPositive ?p_score.
+   ?p_tweet eur:hasAvgNegative ?n_score. 
+   BIND((?n_score+?p_score)/2 as ?avg_score)
+   FILTER(?avg_score &#62; 0)
+}
+}
+GROUP BY (?lang)
+ORDER BY DESC (?percentage) 
+LIMIT 1
 	    </code>
 	  </pre>        
 	</p>
@@ -512,11 +620,38 @@ some code
     <div class="card" id="CQ10" style="width: 25rem;">
       <div class="card-header">CQ10</div>
       <div class="card-body">
-        <h5 class="card-title">what is...?</h5>
+        <h5 class="card-title">Which is the percentage (rounded to its integer part) of average positive tweets for each lang?</h5>
         <p class="card-text">
 	  <pre>
 	    <code class="sql sparql-text">
-some code 
+BASE &#60;http://www.europinion.com/&#62;
+PREFIX eur: &#60;http://www.europinion.com/&#62;
+
+SELECT ?lang 
+(COUNT(?tweet) AS ?tweet_count) 
+(COUNT(?p_tweet) AS ?positive_tweets) 
+(ROUND(?positive_tweets*100/?tweet_count) AS ?percentage)
+  
+WHERE {
+  {&#60;2019/&#62; eur:lang ?lang.
+   ?lang eur:hasTweet ?tweet.} 
+UNION
+{
+  &#60;2019/&#62; eur:lang ?lang.
+  ?lang eur:hasTweet ?p_tweet.
+  ?p_tweet eur:hasAvgPositive ?score.
+}
+  UNION
+{  &#60;2019/&#62; eur:lang ?lang.
+   ?lang eur:hasTweet ?p_tweet.
+   ?p_tweet eur:hasAvgPositive ?p_score.
+   ?p_tweet eur:hasAvgNegative ?n_score. 
+   BIND((?n_score+?p_score)/2 as ?avg_score)
+   FILTER(?avg_score &#62; 0)
+}
+}
+GROUP BY (?lang)
+ORDER BY DESC (?percentage)
 	    </code>
 	  </pre>        
 	</p>
