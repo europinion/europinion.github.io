@@ -346,17 +346,15 @@
 
     var vis3Data;
     fetch('visualisation_3.txt')
-    .then(response => response.json())
-    .then(data => vis3Data = data)
-
-    console.log(vis3Data)
-
-    var scatterChartData = {
-     	datasets: [{	
-        label: 'My First dataset',	
-        data: vis3Data
-        }]
-    };
+    .then(response => response.text())
+    .then(data => {
+        var scatterChartData = {
+            datasets: [{    
+            label: 'My First dataset',  
+            data: data
+            }]
+        };
+    })
 
     console.log(scatterChartData)
 
