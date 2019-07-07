@@ -350,7 +350,7 @@
             datasets: [{    
                 label: 'My First dataset',  
                 data: JSON.parse(this.responseText),
-                pointBackgroundColor: 'rgba(0,51,153,0.2)',
+                pointBackgroundColor: 'rgba(0,51,153,0.3)',
                 pointBorderColor: 'rgba(0,51,153,0.3)',
             }]
         };
@@ -384,7 +384,7 @@
 
     var oReq = new XMLHttpRequest();
     oReq.addEventListener("load", v3Chart);
-    oReq.open("GET", "visualisation_3.txt");
+    oReq.open("GET", "assets/visualisations/v3.txt");
     oReq.send();
   </script>
 

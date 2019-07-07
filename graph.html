@@ -20,7 +20,8 @@
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
 
-
+  <!-- Force Graph Master -->
+  <script src="//unpkg.com/force-graph"></script>
 
 </head>
 <body>
@@ -78,6 +79,7 @@
     <div class="container">
         <div class="media-container-row">
             <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p><strong>All the beautifuly content.</strong></p></div>
+            <div id="graph"></div>
         </div>
     </div>
 </section>
@@ -107,6 +109,24 @@
     </div>
 </section>
 
+  <script>
+    fetch('assets/knowledgeGraph.json').then(res => res.json()).then(data => {
+      const elem = document.getElementById('graph');
+
+      const Graph = ForceGraph()(elem)
+        .graphData(data)
+        .nodeLabel('id')
+        .nodeAutoColorBy('group')
+        .linkDirectionalParticles(2)
+        .linkDirectionalParticleWidth(1.4)
+        .onNodeHover(node => elem.style.cursor = node ? 'pointer' : null)
+        .onNodeClick(node => {
+          // Center/zoom on node
+          Graph.centerAt(node.x, node.y, 1000);
+          Graph.zoom(8, 2000);
+        });
+    });
+  </script>
 
   <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/popper/popper.min.js"></script>
