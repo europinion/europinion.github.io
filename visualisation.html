@@ -24,6 +24,11 @@
   <!-- Chart.js -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
+  <!-- Highlight.js -->
+  <link rel="stylesheet" href="assets/highlightjs/highlight.css">
+  <script src="assets/highlightjs/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 <body>
   <section class="menu cid-rvgZMVDNg8" once="menu" id="menu1-k">
@@ -341,13 +346,13 @@
 	    <code class="sparql" style="font-size: 1 rem">
 PREFIX eur: <http://www.europinion.com/>
 
-SELECT ?tweet  
+SELECT ?tweet
 WHERE {
   ?tweet eur:hasLang "de"
-} 
+}
 	    </code>
 	   </pre>
-	  </div>  
+	  </div>
 	</p>
         <a href="#" class="card-link">See the results</a>
       </div>
