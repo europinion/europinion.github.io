@@ -16,7 +16,7 @@ data['nodes'].append(newNode)
 
 for key in langDict:
     groupID = langDict[key]
-    newLink = {"source":str(2019),"target":str(key),"predicate":"test"}
+    newLink = {"source":str(2019),"target":str(key),"predicate":"eur:lang"}
     data['links'].append(newLink)
 
     newNode = {"id":str(key),"group":groupID}
@@ -26,40 +26,40 @@ for index, row in df.iterrows():
     groupID = langDict[row['lang']]
 
     tweetID = str('/2019'+'/'+row['lang']+'/'+str(row['tweetnr'])+'/')
-    newLink = {"source":str(row['lang']),"target":tweetID,"predicate":"test"}
+    newLink = {"source":str(row['lang']),"target":tweetID,"predicate":"eur:hasTweet"}
     data['links'].append(newLink)
 
     newNode = {"id":tweetID,"group":groupID}
     data['nodes'].append(newNode)
 
     datestamp = re.findall('(\d\d\d\d-\d\d-\d\d)', row['created_at'])[0]
-    newLink = {"source":tweetID,"target":str(datestamp),"predicate":"test"}
+    newLink = {"source":tweetID,"target":str(datestamp),"predicate":"eur:hasDate"}
     data['links'].append(newLink)
     if not any(node['id'] == str(datestamp) for node in data['nodes']):
         newNode = {"id":str(datestamp),"group":groupID}
         data['nodes'].append(newNode)
 
     timestamp = re.findall('(\d\d:\d\d:\d\d)', row['created_at'])[0]
-    newLink = {"source":tweetID,"target":str(timestamp),"predicate":"test"}
+    newLink = {"source":tweetID,"target":str(timestamp),"predicate":"eur:hasTime"}
     data['links'].append(newLink)
     if not any(node['id'] == str(timestamp) for node in data['nodes']):
         newNode = {"id":str(timestamp),"group":groupID}
         data['nodes'].append(newNode)
 
-    newLink = {"source":tweetID,"target":str(row['screen_name']),"predicate":"test"}
+    newLink = {"source":tweetID,"target":str(row['screen_name']),"predicate":"eur:createdBy"}
     data['links'].append(newLink)
     if not any(node['id'] == str(row['screen_name']) for node in data['nodes']):
         newNode = {"id":str(row['screen_name']),"group":groupID}
         data['nodes'].append(newNode)
 
     if pd.isnull(row['location']) == False:
-        newLink = {"source":tweetID,"target":str(row['location']),"predicate":"test"}
+        newLink = {"source":tweetID,"target":str(row['location']),"predicate":"eur:hasLocation"}
         data['links'].append(newLink)
         if not any(node['id'] == str(row['location']) for node in data['nodes']):
             newNode = {"id":str(row['location']),"group":groupID}
             data['nodes'].append(newNode)
 
-    newLink = {"source":tweetID,"target":str(row['full_text']),"predicate":"test"}
+    newLink = {"source":tweetID,"target":str(row['full_text']),"predicate":"eur:hasText"}
     data['links'].append(newLink)
     if not any(node['id'] == str(row['full_text']) for node in data['nodes']):
         newNode = {"id":str(row['full_text']),"group":groupID}
@@ -69,7 +69,7 @@ for index, row in df.iterrows():
         urlsList = row['urls'].split(',')
         for item in urlsList:
             tmp = item.strip()
-            newLink = {"source":tweetID,"target":str(tmp),"predicate":"test"}
+            newLink = {"source":tweetID,"target":str(tmp),"predicate":"eur:hasURL"}
             data['links'].append(newLink)
             if not any(node['id'] == str(tmp) for node in data['nodes']):
                 newNode = {"id":str(tmp),"group":groupID}
@@ -79,7 +79,7 @@ for index, row in df.iterrows():
         tagsList = row['tags'].split(',')
         for item in tagsList:
             tmp = item.strip()
-            newLink = {"source":tweetID,"target":str(tmp),"predicate":"test"}
+            newLink = {"source":tweetID,"target":str(tmp),"predicate":"eur:hasHashtag"}
             data['links'].append(newLink)
             if not any(node['id'] == str(tmp) for node in data['nodes']):
                 newNode = {"id":str(tmp),"group":groupID}
@@ -89,27 +89,27 @@ for index, row in df.iterrows():
         mentionsList = row['mentions'].split(',')
         for item in mentionsList:
             tmp = item.replace(" ", "")
-            newLink = {"source":tweetID,"target":str(tmp),"predicate":"test"}
+            newLink = {"source":tweetID,"target":str(tmp),"predicate":"eur:hasMention"}
             data['links'].append(newLink)
             if not any(node['id'] == str(tmp) for node in data['nodes']):
                 newNode = {"id":str(tmp),"group":groupID}
                 data['nodes'].append(newNode)
 
     if row['retweet_count'] != 0:
-        newLink = {"source":tweetID,"target":str(row['retweet_count']),"predicate":"test"}
+        newLink = {"source":tweetID,"target":str(row['retweet_count']),"predicate":"eur:hasRetweet"}
         data['links'].append(newLink)
         if not any(node['id'] == str(row['retweet_count']) for node in data['nodes']):
             newNode = {"id":str(row['retweet_count']),"group":groupID}
             data['nodes'].append(newNode)
 
     if row['favorite_count'] != 0:
-        newLink = {"source":tweetID,"target":str(row['favorite_count']),"predicate":"test"}
+        newLink = {"source":tweetID,"target":str(row['favorite_count']),"predicate":"eur:isFavorite"}
         data['links'].append(newLink)
         if not any(node['id'] == str(row['favorite_count']) for node in data['nodes']):
             newNode = {"id":str(row['favorite_count']),"group":groupID}
             data['nodes'].append(newNode)
 
-    newLink = {"source":tweetID,"target":str(row['parsed_text']),"predicate":"test"}
+    newLink = {"source":tweetID,"target":str(row['parsed_text']),"predicate":"eur:hasParsed"}
     data['links'].append(newLink)
     if not any(node['id'] == str(row['parsed_text']) for node in data['nodes']):
         newNode = {"id":str(row['parsed_text']),"group":groupID}
@@ -119,13 +119,13 @@ for index, row in df.iterrows():
         emojiList = row['emoji'].split(',')
         for item in emojiList:
             tmp = item.strip()
-            newLink = {"source":tweetID,"target":str(tmp),"predicate":"test"}
+            newLink = {"source":tweetID,"target":str(tmp),"predicate":"eur:hasEmoji"}
             data['links'].append(newLink)
             if not any(node['id'] == str(tmp) for node in data['nodes']):
                 newNode = {"id":str(tmp),"group":groupID}
                 data['nodes'].append(newNode)
 
-    newLink = {"source":tweetID,"target":str(row['english']),"predicate":"test"}
+    newLink = {"source":tweetID,"target":str(row['english']),"predicate":"eur:hasTranslation"}
     data['links'].append(newLink)
     if not any(node['id'] == str(row['english']) for node in data['nodes']):
         newNode = {"id":str(row['english']),"group":groupID}
