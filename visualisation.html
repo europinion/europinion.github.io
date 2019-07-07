@@ -349,7 +349,7 @@
 
     var client = new XMLHttpRequest();
     client.open('GET', 'visualisation_3.txt');
-    
+
     client.onreadystatechange = function() {
         if (client.readyState == 4 && client.status == 200)
             scatterChartData = {
@@ -359,7 +359,6 @@
                 }]
             };
 
-            window.onload = function() {
             var ctx = document.getElementById('myScatter').getContext('2d');
               window.myScatter = Chart.Scatter(ctx, {
                 data: scatterChartData,
@@ -385,7 +384,6 @@
                   }
                 }
               });
-            };
     }
 
     client.send();
