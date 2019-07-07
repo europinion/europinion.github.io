@@ -344,23 +344,16 @@
 
   <script>
 
-    var vis3 = new XMLHttpRequest();
-    vis3.open('GET', 'visualisation_3.txt');
-    function getVis3() {   
-        vis3.onreadystatechange = function() {
-            if (this.readyState == 4) {
-                vis3_data = vis3.responseText;
-                console.log(vis3);
-                return vis3_data;
-            }
-        }
-    }
-    vis3.send();
+    var obj;
+
+    fetch('visualisation_3.txt')
+      .then(data => obj = data)
+      .then(() => console.log(obj))
 
     var scatterChartData = {
      	datasets: [{	
         label: 'My First dataset',	
-        data: getVis3()
+        data: obj
         }]
     };
 
