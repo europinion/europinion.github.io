@@ -347,10 +347,11 @@
     function vis3() {
         fetch('visualisation_3.txt')
         .then(function(response){
-            let vis3Data = reponse.text()
-            return vis3Data
+            return reponse.text()
         })
-        return vis3Data
+        .then(function(data){
+            return data
+        })
     }
 
     console.log(vis3())
