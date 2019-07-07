@@ -451,17 +451,19 @@
     <script>
         var DAYS = ['27-05', '28-05', '29-05', '30-05', '31-05', '01-06', '02-06'];
         var config = {
-            type: 'line',
+            type: 'lineChartData',
             data: {
                 labels: ['27-05', '28-05', '29-05', '30-05', '31-05', '01-06', '02-06'],
                 datasets: [{
                     label: 'Total Tweets',
                     data: [4950,1988,936,886,773,559,1268],
                     fill: false,
+                    yAxisID: 'y-axis-1',
                 }, {
                     label: 'Average Score',
                     fill: false,
                     data: [0.057,0.053,0.055,0.061,0.050,0.054,0.035],
+                    yAxisID: 'y-axis-2'
                 }]
             },
             options: {
@@ -487,10 +489,15 @@
                         }
                     }],
                     yAxes: [{
-                        display: true,
-                        scaleLabel: {
+                            type: 'linear',
                             display: true,
-                            labelString: 'Value'
+                            position: 'left',
+                            id: 'y-axis-1',
+                        }, {
+                            type: 'linear',
+                            display: true,
+                            position: 'right',
+                            id: 'y-axis-2',
                         }
                     }]
                 }
@@ -499,7 +506,7 @@
 
         window.onload = function() {
             var ctx = document.getElementById('canvas_v2').getContext('2d');
-            window.myLine = new Chart(ctx, config);
+            window.myLine = new Chart.Line(ctx, config);
         };
     </script>
 
