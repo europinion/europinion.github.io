@@ -350,10 +350,9 @@
             return response.text()
         })
         .then(function(data){
-            let vis3Data = data
+            vis3Data = data
             return vis3Data
         })
-        return result
     }
 
     console.log(vis3())
@@ -361,7 +360,7 @@
     var scatterChartData = {
      	datasets: [{	
         label: 'My First dataset',	
-        data: vis3()
+        data: vis3Data
         }]
     };
 
