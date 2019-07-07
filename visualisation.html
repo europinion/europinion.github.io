@@ -348,7 +348,7 @@
         scatterChartData = {
             datasets: [{    
                 label: 'My First dataset',  
-                Data: String(this.responseText)
+                data: JSON.parse(this.responseText)
             }]
         };
         console.log(scatterChartData)
@@ -386,7 +386,7 @@
   </script>
 
   <script>
-		var data = {
+	var data = {
       labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
       datasets: [{
         label: 'Dataset 1',
