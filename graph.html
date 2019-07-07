@@ -181,13 +181,11 @@
         .nodeColor('colour')
         .linkColor(() => 'rgba(255,255,255,0.3)')
         .linkLabel('predicate')
-        .linkDirectionalParticles(2)
-        .linkDirectionalParticleWidth(1.4)
         .onNodeHover(node => elem.style.cursor = node ? 'pointer' : null)
         .onNodeClick(node => {
           // Center/zoom on node
           Graph.centerAt(node.x, node.y, 1000);
-          Graph.zoom(8, 2000);
+          Graph.zoom(5, 2000);
         });
 
         Graph.zoom(1.05);
