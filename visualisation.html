@@ -57,22 +57,24 @@
     </nav>
 </section>
 
-<section class="engine"><a href="https://mobirise.info/z">best css templates</a></section><section class="mbr-section content4 cid-rvrS31EJIP" id="content4-18">
+<div class="accordion" id="menu"> <!-- start of accordion -->
+<div class="card"> <!-- div containing the first collapsible -->
+
+    <section class="engine"><a href="https://mobirise.info/z">best css templates</a></section><section class="mbr-section content4 cid-rvrS31EJIP" id="content4-18">
 
 
-
-    <div class="container">
+      <div class="container">
         <div class="media-container-row">
             <div class="title col-12 col-l-8">
-                <h2 class="align-center pb-3 mbr-fonts-style display-2"><strong>Queries</strong></h2>
+                <h2><button class="align-center pb-3 mbr-fonts-style display-2" type="button" data-toggle="collapse" data-target="#visualisations"><strong>Queries</strong></button></h2>
                 <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5">SPARQL query results in pretty.</h3>
-
             </div>
         </div>
     </div>
 </section>
-
-<section class="tabs2 cid-rvsO0Sfnun" id="tabs2-1t">
+	
+<div id="visualisations" class="collapse show" aria-labelledby="headingOne" data-parent="#menu">
+  <section class="tabs2 cid-rvsO0Sfnun" id="tabs2-1t">
 
 
 
@@ -304,23 +306,31 @@
             </div>
         </div>
     </div>
-</section>
+  </section>
+</div> <!-- end of collapse show item 1 #visualisations -->
+</div> <!-- end of collapsible item 1 #visualisations -->
 
-<section class="engine"><a href="https://mobirise.info/z">best css templates</a></section><section class="mbr-section content4 cid-rvrS31EJIP" id="content4-18">
+<div class="card">  <!-- start of collapsible item 2 #sparql -->
+
+  <section class="engine"><a href="https://mobirise.info/z">best css templates</a></section><section class="mbr-section content4 cid-rvrS31EJIP" id="content4-18">
 
 
-
-    <div class="container">
+      <div class="container">
         <div class="media-container-row">
             <div class="title col-12 col-l-8">
-                <h2 class="align-center pb-3 mbr-fonts-style display-2"><strong>Other SPARQL queries</strong></h2>
-                <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5">Let's ask some more questions</h3>
-
+                <h2><button class="align-center pb-3 mbr-fonts-style display-2" type="button" data-toggle="collapse" data-target="#sparql"><strong>Other SPARQL queries</strong></button></h2>
+                <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5">Let's ask some more questions.</h3>
             </div>
         </div>
     </div>
-</section>
-
+  </section>
+	
+  <div id="visualisations" class="collapse show" aria-labelledby="headingOne" data-parent="#menu"> <!--collapse 2 show-->
+	<p> blah blah blah </p>
+  </div> <!-- end of collapse 2 show-->	
+	
+</div> <!-- end of collapsible item 2 #sparql -->
+</div> <!-- end of the accordion -->
 	
 <section once="footers" class="cid-rvh7pWUyp3" id="footer7-l">
 
