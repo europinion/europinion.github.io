@@ -348,9 +348,11 @@
     vis3.open('GET', 'visualisation_3.txt');
     function getVis3() {   
         vis3.onreadystatechange = function() {
-            vis3_data = vis3.responseText;
-            console.log(vis3);
-            return vis3_data;
+            if (this.readyState == 4) {
+                vis3_data = vis3.responseText;
+                console.log(vis3);
+                return vis3_data;
+            }
         }
     }
     vis3.send();
