@@ -252,6 +252,7 @@
                             <div class="col-md-12">
                                 <p class="mbr-text py-5 mbr-fonts-style display-7">GRAPH</p>
                             </div>
+                            <canvas id="canvas_v2"></canvas>
                         </div>
                     </div>
                     <div id="tab2" class="tab-pane" role="tabpanel">
@@ -260,7 +261,6 @@
                                 <p class="mbr-text py-5 mbr-fonts-style display-7">
                                     GRAPH
                                 </p>
-                                <canvas id="canvas_v2"></canvas>
                             </div>
                         </div>
                     </div>
@@ -460,7 +460,7 @@
                     fill: false,
                     yAxisID: 'y-axis-1',
                 }, {
-                    label: 'Average Score',
+                    label: 'Average Sentiment',
                     fill: false,
                     data: [0.057,0.053,0.055,0.061,0.050,0.054,0.035],
                     yAxisID: 'y-axis-2'
@@ -485,7 +485,7 @@
                         display: true,
                         scaleLabel: {
                             display: true,
-                            labelString: 'Days'
+                            labelString: 'Dates'
                         }
                     }],
                     yAxes: [{
@@ -493,11 +493,19 @@
                             display: true,
                             position: 'left',
                             id: 'y-axis-1',
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Total Tweets'
+                            }
                         }, {
                             type: 'linear',
                             display: true,
                             position: 'right',
                             id: 'y-axis-2',
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Average Sentiment'
+                            }
                         }]
                     }
                 }
