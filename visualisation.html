@@ -344,13 +344,14 @@
 
   <script>
     function reqListener () {
+        console.log(this.responseText)
         scatterChartData = {
             datasets: [{    
                 label: 'My First dataset',  
                 Data: this.responseText
             }]
         };
-
+        console.log(scatterChartData)
         var ctx = document.getElementById('myScatter').getContext('2d');
         window.myScatter = Chart.Scatter(ctx, {
         data: scatterChartData,
