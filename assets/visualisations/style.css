@@ -3,8 +3,8 @@
 }
 
 #graph-container {
-	width: 70%;
-	height: auto;
+	width: 70vw;
+	height: 50vh;
 	margin: 0 auto;
 	overflow: hidden;
 }
