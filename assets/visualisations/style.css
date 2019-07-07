@@ -3,8 +3,8 @@
 }
 
 #graph-container {
-	width: 70%; 
-	height: auto; 
+	width: 70%;
+	height: auto;
 	margin: 0 auto;
 	overflow: hidden;
 }
@@ -16,7 +16,5 @@
 
 #graph canvas {
 	background-color: #1b1e23;
-	width: 100%!important;
-	height: auto!important;
 	display: inline-block;
 }
