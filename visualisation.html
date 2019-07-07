@@ -333,8 +333,21 @@
     <div class="card" id="CQ1" style="width: 25rem;">
       <div class="card-header">CQ1</div>
       <div class="card-body">
-        <h5 class="card-title">what is...?</h5>
-        <p class="card-text">sparql code.</p>
+        <h5 class="card-title">Which tweets have lang identified by Twitter as "de"?</h5>
+        <p class="card-text">
+	  <div>
+	   <pre>
+	    <code class="sparql">
+PREFIX eur: <http://www.europinion.com/>
+
+SELECT ?tweet  
+WHERE {
+  ?tweet eur:hasLang "de"
+} 
+	    </code>
+	   </pre>
+	  </code>  
+	</p>
         <a href="#" class="card-link">See the results</a>
       </div>
     </div>
