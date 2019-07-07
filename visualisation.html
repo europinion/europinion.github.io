@@ -347,6 +347,7 @@
     var obj;
 
     fetch('visualisation_3.txt')
+      .then(data => data.text())
       .then(data => obj = data)
       .then(() => console.log(obj))
 
