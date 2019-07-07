@@ -357,38 +357,38 @@
                 data: client.responseText
                 }]
             };
+
+            window.onload = function() {
+            var ctx = document.getElementById('myScatter').getContext('2d');
+              window.myScatter = Chart.Scatter(ctx, {
+                data: scatterChartData,
+                options: {
+                  title: {
+                    display: true,
+                    text: 'Chart.js Scatter Chart'
+                  },
+                  scales: {
+                      xAxes: [{
+                          ticks: {
+                            max : -1,
+                            min: 0,
+                            reverse: true
+                          }
+                      }],
+                      yAxes: [{
+                          ticks: {
+                            max : 1,
+                            min : 0
+                          }
+                      }]
+                  }
+                }
+              });
+            };
     }
+    
     client.send();
 
-    console.log(scatterChartData)
-
-    window.onload = function() {
-    var ctx = document.getElementById('myScatter').getContext('2d');
-      window.myScatter = Chart.Scatter(ctx, {
-        data: scatterChartData,
-        options: {
-          title: {
-            display: true,
-            text: 'Chart.js Scatter Chart'
-          },
-          scales: {
-              xAxes: [{
-                  ticks: {
-                    max : -1,
-                    min: 0,
-                    reverse: true
-                  }
-              }],
-              yAxes: [{
-                  ticks: {
-                    max : 1,
-                    min : 0
-                  }
-              }]
-          }
-        }
-      });
-    };
   </script>
 
   <script>
