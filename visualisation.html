@@ -350,10 +350,13 @@
             return response.text()
         })
         .then(function(data){
-            return data
+            let vis3Data = data
+            return vis3Data
         })
+        return result
     }
 
+    console.log(vis3Data)
     console.log(vis3())
 
     var scatterChartData = {
