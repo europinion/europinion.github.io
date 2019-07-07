@@ -346,7 +346,7 @@
 
     var vis3 = new XMLHttpRequest();
     vis3.open('GET', 'visualisation_3.txt');
-    vis3_data = vis3.onreadystatechange = function() {
+    vis3.onreadystatechange = function() {
         var vis3_data = vis3.responseText;
         console.log(vis3_data);
         return vis3_data;
@@ -358,7 +358,7 @@
     var scatterChartData = {
      	datasets: [{	
         label: 'My First dataset',	
-        data: vis3_data
+        data: vis3.responseText
         }]
     };
 
