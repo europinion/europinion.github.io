@@ -29,4 +29,6 @@ margin: 0;
  background-color: transparent; 
  border-color: transparent;
  border-style: 0;
+ margin: 0; 
+ padding: 5px; 
 }
