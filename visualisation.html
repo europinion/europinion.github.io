@@ -361,11 +361,18 @@ WHERE {
     <div class="card" id="CQ2" style="width: 25rem;">
       <div class="card-header">CQ2</div>
       <div class="card-body">
-        <h5 class="card-title">what is...?</h5>
+        <h5 class="card-title">Which tweets have lang set to "en"?</h5>
         <p class="card-text">
 	  <pre>
 	    <code class="sql sparql-text">
-some code 
+BASE &#60;http://www.europinion.com/&#62;
+PREFIX eur: &#60;http://www.europinion.com/&#62;
+
+SELECT ?tweet 
+WHERE {
+  &#60;2019/&#62; eur:lang &#60;2019/sv/&#62;.
+  &#60;2019/sv/&#62; eur:hasTweet ?tweet.
+}
 	    </code>
 	   </pre>      
 	</p>
