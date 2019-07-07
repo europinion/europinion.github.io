@@ -118,7 +118,7 @@
 </section>
 
   <script>
-    fetch('static/assets/visualisations/graph.json').then(res => res.json()).then(data => {
+    fetch('assets/visualisations/graph.json').then(res => res.json()).then(data => {
       const elem = document.getElementById('graph');
 
       const Graph = ForceGraph()(elem)
