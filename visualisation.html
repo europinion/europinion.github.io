@@ -343,51 +343,45 @@
   <script src="assets/theme/js/script.js"></script>
 
   <script>
-
-    var vis3Data;
-    var scatterChartData;
-
-    var client = new XMLHttpRequest();
-    client.open('GET', 'visualisation_3.txt');
-
-    client.onreadystatechange = function() {
-        if (client.readyState == 4 && client.status == 200)
-            scatterChartData = {
-                datasets: [{    
+    function reqListener () {
+        scatterChartData = {
+            datasets: [{    
                 label: 'My First dataset',  
-                data: client.responseText
-                }]
-            };
+                Data: this.responseText
+            }]
+        };
 
-            var ctx = document.getElementById('myScatter').getContext('2d');
-              window.myScatter = Chart.Scatter(ctx, {
-                data: scatterChartData,
-                options: {
-                  title: {
-                    display: true,
-                    text: 'Chart.js Scatter Chart'
-                  },
-                  scales: {
-                      xAxes: [{
-                          ticks: {
-                            max : -1,
-                            min: 0,
-                            reverse: true
-                          }
-                      }],
-                      yAxes: [{
-                          ticks: {
-                            max : 1,
-                            min : 0
-                          }
-                      }]
+        var ctx = document.getElementById('myScatter').getContext('2d');
+        window.myScatter = Chart.Scatter(ctx, {
+        data: scatterChartData,
+        options: {
+          title: {
+            display: true,
+            text: 'Chart.js Scatter Chart'
+          },
+          scales: {
+              xAxes: [{
+                  ticks: {
+                    max : -1,
+                    min: 0,
+                    reverse: true
                   }
-                }
-              });
+              }],
+              yAxes: [{
+                  ticks: {
+                    max : 1,
+                    min : 0
+                  }
+              }]
+          }
+        }
+      });
     }
 
-    client.send();
-
+    var oReq = new XMLHttpRequest();
+    oReq.addEventListener("load", reqListener);
+    oReq.open("GET", "visualisation_3.txt");
+    oReq.send();
   </script>
 
   <script>
