@@ -349,7 +349,7 @@
     var client = new XMLHttpRequest();
     client.open('GET', '/foo.txt');
     client.onreadystatechange = function() {
-        if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
+        if (client.readyState == 4 && client.status == 200)
             var scatterChartData = {
                 datasets: [{    
                 label: 'My First dataset',  
