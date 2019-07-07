@@ -347,7 +347,7 @@
     var vis3 = new XMLHttpRequest();
     vis3.open('GET', 'visualisation_3.txt');
     vis3.onreadystatechange = function() {
-        var vis3_data = client.responseText;
+        var vis3_data = vis3.responseText;
     }
     vis3.send();
 
