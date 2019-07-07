@@ -22,3 +22,8 @@ margin: 0;
   font-size: 1rem;
 }
 
+.coll-button {
+ background-color: transparent; 
+ border-color: transparent;
+ border-style: 0;
+}
