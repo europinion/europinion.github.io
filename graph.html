@@ -180,6 +180,7 @@
         .nodeLabel('id')
         .nodeAutoColorBy('group')
         .linkColor(() => 'rgba(255,255,255,0.3)')
+        .linkLabel('predicate')
         .linkDirectionalParticles(2)
         .linkDirectionalParticleWidth(1.4)
         .onNodeHover(node => elem.style.cursor = node ? 'pointer' : null)
