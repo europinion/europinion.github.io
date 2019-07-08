@@ -6,11 +6,13 @@
 .card-header {
  padding-left: 5px;
  padding-right: 5px; 
- border-style-bottom: 0; 
+ background-color: rgba(0,0,0,0);
+ border-bottom: 1px solid rgba(0,0,0,0);
 }
 
 .each-card {
 width: 50%;
+border-style: solid, blue, 5px; 
 }
 
 .card-body {
