@@ -50,7 +50,7 @@ function preload(callback) {
   var Connect = new XMLHttpRequest();
   // Define which file to open and
   // send the request.
-  Connect.open("GET", "assets/results/CQ3.json", false);
+  Connect.open("GET", "assets/results/CQ1.json", false);
   Connect.setRequestHeader("Content-Type", "text/json");
   Connect.send(null);
   // Place the response in an XML document.
