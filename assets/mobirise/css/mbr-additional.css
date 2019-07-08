@@ -3013,7 +3013,7 @@ body {
   font-weight: 500;
   border-radius: 3px;
   border: 1px solid #003399;
-  padding: 1rem 3rem;
+  padding: 0.5rem 1rem;
   margin: 0.4rem .8rem !important;
   transition: all .5s;
 }
@@ -3055,7 +3055,7 @@ body {
   font-weight: 500;
   border-radius: 3px;
   border: 1px solid #003399;
-  padding: 0.5rem 1rem;
+  padding: 1rem 3rem;
   margin: 0.4rem .8rem !important;
   transition: all .5s;
 }
