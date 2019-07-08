@@ -1,0 +1,3999 @@
+{
+  "head": {
+    "vars": [ "tweet" ]
+  } ,
+  "results": {
+    "bindings": [
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/90" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1206" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1011" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/840" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/373" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/491" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/272" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/880" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1300" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1008" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/916" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/298" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/354" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1264" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/653" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/264" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/52" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1183" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/278" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/241" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/904" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/667" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/862" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1141" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/190" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/695" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/807" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1106" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/594" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/324" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1196" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/44" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/746" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/483" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/426" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1108" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/985" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1013" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/761" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/343" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/996" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/855" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/76" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1181" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/465" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/564" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1273" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1086" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/293" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/981" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1149" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1265" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/165" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/946" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1064" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/40" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/459" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1112" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/935" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/545" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/148" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1137" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/752" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/507" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/429" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/561" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1081" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/479" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/89" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/892" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1244" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/167" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1229" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/284" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1177" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1118" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/837" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1142" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1110" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/432" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/259" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1282" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/212" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/802" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/400" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/713" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/590" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/526" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1316" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/282" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1179" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/651" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/95" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/906" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/690" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/813" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/707" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/662" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1139" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/422" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1321" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/971" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1195" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/936" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1097" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/701" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/124" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/881" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/567" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/132" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/941" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/357" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1188" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/901" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/860" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/780" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/366" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/149" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/991" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/994" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1088" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1187" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/341" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/473" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/586" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1052" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/151" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1209" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/252" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/576" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/556" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1072" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/741" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/591" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/73" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/117" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1056" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/119" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/867" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1061" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/762" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/778" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/285" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/836" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/283" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1009" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1298" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1200" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/87" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/889" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1092" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/504" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/548" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/15" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/13" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/104" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/794" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1157" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/531" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/669" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/552" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/841" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/763" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/153" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/755" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/415" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1323" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1123" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/835" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1301" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/370" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1048" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/486" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/492" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1174" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/687" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/887" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/184" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/937" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/957" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1146" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/562" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/857" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/787" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/859" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/359" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/351" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/348" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1089" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1248" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1205" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/781" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/189" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/838" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/903" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1130" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/825" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/238" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1041" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/172" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/98" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1295" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/634" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/674" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/546" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/933" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/891" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1051" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/208" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1312" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/609" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/318" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/527" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/170" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/394" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1078" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/308" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1224" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/63" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/550" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/514" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/38" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/601" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/956" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/466" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/898" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/908" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/33" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/495" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1255" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/319" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1093" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1101" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/797" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1315" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/960" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/35" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/672" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1294" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/715" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1006" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/408" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1136" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1274" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/735" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1326" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/660" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/693" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1233" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/314" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/541" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1318" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/726" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/939" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1046" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/954" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1320" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/231" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1304" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1266" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1186" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1307" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/871" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/31" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/358" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/974" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/874" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1204" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/467" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/641" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/698" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/984" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/39" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/413" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/827" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1237" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/304" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/313" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/156" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1207" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/967" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/812" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/416" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/292" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1156" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/233" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/776" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/27" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1241" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1005" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/109" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/288" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/360" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/516" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/143" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/599" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/444" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/910" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/159" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/445" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1129" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1026" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/169" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/720" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/203" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1067" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1211" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/659" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/522" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/310" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1277" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/896" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/856" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1085" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/253" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/920" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1306" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/114" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/537" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/830" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1194" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/705" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/129" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/624" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/105" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/963" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1135" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/28" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/968" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/587" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/951" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/919" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1126" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1297" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/17" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/255" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1102" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/84" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/501" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/317" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/309" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/900" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/470" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/572" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1305" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1028" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1175" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/281" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/141" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1198" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/455" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1249" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/226" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1203" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/620" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/96" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/260" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/478" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/326" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/577" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/909" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/614" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/137" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/60" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/302" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/299" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/54" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/977" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/14" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/573" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/472" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1228" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1268" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/328" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1100" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/664" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/489" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/680" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/62" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/702" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1269" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1030" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1124" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/377" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/59" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1284" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/336" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/913" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/365" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1329" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/250" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/480" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/918" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/230" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/639" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1245" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/608" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/375" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/699" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/829" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/235" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/915" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/200" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/708" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/312" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/696" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1027" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/7" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/866" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/229" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/569" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/821" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/656" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/198" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/603" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/425" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1119" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1328" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/197" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/723" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/439" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/396" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/520" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/296" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1275" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/615" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/88" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/322" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/992" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/68" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/958" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/179" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1168" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1180" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/980" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1221" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/500" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/221" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1260" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/183" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/697" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/611" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/79" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/146" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/525" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1213" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/327" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/658" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/334" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1258" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/513" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/461" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/808" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/868" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/623" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/521" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/409" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/631" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/748" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/346" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1324" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/528" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1160" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/890" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/126" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/524" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/894" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/331" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/861" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/419" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/294" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/163" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/67" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/831" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/863" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1127" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/401" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/139" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/494" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/605" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1243" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/451" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/393" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1253" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/246" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/243" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/596" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/882" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1214" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1007" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1234" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/854" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/154" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/629" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1018" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/877" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/853" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/612" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1033" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1029" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/930" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/237" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/118" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/865" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/232" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/864" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/127" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1199" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/94" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1023" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1281" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/228" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/177" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1191" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/145" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/29" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/34" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/769" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/262" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/922" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1219" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/914" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1144" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/549" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/106" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/700" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/875" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1071" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/539" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/613" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/666" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/25" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/779" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/20" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/69" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/338" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/997" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1276" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/450" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/280" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/91" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/717" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/254" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/403" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/443" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1075" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/157" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/371" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/385" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/26" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/382" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/468" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1290" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/509" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/330" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1095" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/353" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1049" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/423" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/926" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/510" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1251" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/742" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/643" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/481" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/785" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/801" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/414" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/386" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/589" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1084" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/571" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1025" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/843" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/815" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/458" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/606" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1083" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1166" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1133" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/928" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1291" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/691" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1148" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1002" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/765" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/978" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/436" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1296" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/993" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/53" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/222" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1210" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/441" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/428" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1167" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/10" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/113" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/506" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/85" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/724" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/320" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1164" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1250" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/945" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1222" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1231" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/101" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/959" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1079" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/21" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/261" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/311" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1161" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/617" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/291" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/209" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/112" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/265" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1115" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1271" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/271" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1240" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/290" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/482" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/602" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/446" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/544" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/694" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/19" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/321" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/847" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/795" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/176" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/839" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/560" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1226" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1068" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1107" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/369" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/97" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/646" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/948" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/940" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/570" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/307" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/688" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1165" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/530" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/704" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1111" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/47" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/270" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1319" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1184" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/657" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/979" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/655" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1113" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/496" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/884" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/239" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/477" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/329" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/932" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1152" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/555" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/789" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/138" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/565" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/223" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/876" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/663" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/498" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/511" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/810" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/912" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/893" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/621" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/57" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1109" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1073" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/508" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/391" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1114" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/51" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1116" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/404" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1121" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/130" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/845" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/679" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1208" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/849" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1261" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/566" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/833" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/950" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/164" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/905" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/168" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/788" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/398" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/161" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/598" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/670" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/453" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/61" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/464" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/397" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1232" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/301" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/144" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/585" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1272" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/770" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/286" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1185" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1217" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/340" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/998" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1074" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/902" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1302" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/768" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1087" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/786" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/457" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/583" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1145" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1143" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/534" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1299" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/625" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/352" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/618" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/216" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1230" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1252" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1220" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/790" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/487" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/178" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/972" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1178" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/388" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/759" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/206" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1289" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/263" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/739" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/462" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/635" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/559" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/553" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/582" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/870" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/22" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/16" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/192" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/442" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1120" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/990" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/115" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/732" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1170" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/729" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/92" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/842" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/671" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/3" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1053" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/995" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/924" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/300" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/297" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1045" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1201" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/869" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/58" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/850" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1122" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/430" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/381" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/969" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/207" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/269" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1155" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/120" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1065" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/777" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/395" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/883" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/502" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1171" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/684" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/41" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/136" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1003" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/125" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/760" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/917" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/931" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/764" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/193" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/427" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1239" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/99" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/888" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/335" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1154" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/65" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1287" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/217" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/551" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/791" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1035" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/895" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/201" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/575" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/344" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/515" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/356" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1280" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/410" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1047" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1094" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1031" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1000" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/749" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/740" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1098" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/766" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/817" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1020" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/793" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/907" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/519" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/180" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/645" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/711" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1314" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/166" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1044" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/685" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1022" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/852" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/563" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/171" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/295" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/712" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/345" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/42" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1010" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/9" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/966" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/205" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/774" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/647" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/135" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/50" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/927" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/399" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/214" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/251" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1131" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/2" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/523" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/989" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1077" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/379" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/37" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/579" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/191" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/438" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1263" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/503" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/316" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/983" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1034" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1309" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1279" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/245" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/944" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/219" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/220" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/276" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1012" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/822" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/796" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/433" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/213" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1103" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/783" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/431" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/64" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/897" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/110" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/952" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/505" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/181" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/512" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/83" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1021" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/116" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/244" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/421" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/784" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/240" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/202" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/155" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/196" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/734" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/211" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/970" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1303" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/256" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/194" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/82" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/188" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/75" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/652" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/886" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/402" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/600" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1189" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/973" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/275" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/616" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1150" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/160" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/469" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/418" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1039" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/70" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/633" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/195" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/543" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/677" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/24" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1014" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/456" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1247" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/737" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/204" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/435" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/185" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/518" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/43" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/475" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/158" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/333" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1218" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/162" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1286" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/199" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/380" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/234" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/72" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/826" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1223" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/832" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/934" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/858" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1212" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/134" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/622" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/364" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1070" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1063" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/921" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/131" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/648" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/754" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/925" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/499" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1202" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/798" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/593" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/142" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/215" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1311" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/535" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/517" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/727" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/848" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1016" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/953" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/227" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/454" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/342" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1242" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/675" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/923" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/78" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/497" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/799" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/757" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1262" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/448" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1147" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/824" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1024" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/210" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/828" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/584" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/982" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/93" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1159" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/574" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/471" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1105" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1163" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1270" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/775" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/5" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/804" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/538" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/642" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/976" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/45" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/592" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/49" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/247" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/150" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/362" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/731" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/744" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/218" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1259" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1325" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/961" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/383" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/819" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/133" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/709" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1055" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1099" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/406" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/440" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1138" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/820" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1193" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/581" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1125" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/873" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/325" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/12" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/32" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/733" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/449" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/955" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/102" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/851" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/692" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/758" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/719" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/303" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/644" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/628" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/490" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/681" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/683" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/152" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/390" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/637" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/772" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/911" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1040" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/147" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/378" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/676" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/274" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/823" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/809" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/745" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/55" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1004" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1331" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/56" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/374" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/942" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/718" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/710" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/372" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/580" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/756" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/140" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/474" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1151" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1059" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/488" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/533" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/803" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/943" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1173" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/714" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/355" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1038" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/654" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/392" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/668" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/532" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/947" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/111" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1215" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/879" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/747" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/175" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/273" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/306" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1080" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/236" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/121" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1054" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1096" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/716" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1158" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/323" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/384" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/649" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1267" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/846" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/77" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/650" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/339" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/267" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1076" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/885" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/738" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1069" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/736" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1058" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/363" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/412" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/607" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/484" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/186" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1117" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1313" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1140" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1216" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1292" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/558" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/407" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/337" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1104" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1190" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/597" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/554" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/266" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1308" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/71" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/706" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/107" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1001" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/460" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1227" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1042" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/437" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1017" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/268" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1225" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/257" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/661" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/722" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/703" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/277" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1134" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1256" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/962" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1182" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/949" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1060" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/389" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/547" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/182" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/725" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/595" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/630" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/929" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1246" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/988" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/81" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/249" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/452" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/258" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1132" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/557" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/730" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/536" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/347" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/86" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1235" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/174" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/48" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/287" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/128" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/8" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1153" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/66" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/728" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1254" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1285" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/187" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/279" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1015" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/965" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1172" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/899" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/305" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/376" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/224" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/878" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/800" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/417" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1278" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1057" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/4" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/636" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/248" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/682" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/542" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/30" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/743" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/424" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/753" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/36" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/405" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/818" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/493" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/673" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/103" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/626" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/604" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1037" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/872" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/485" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/74" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1192" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/434" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/242" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/588" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/6" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1128" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/367" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1050" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/23" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/805" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/46" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/938" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1317" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1162" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/816" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/640" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/806" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1197" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1322" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1062" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/368" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1257" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/632" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/773" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1082" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/975" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/678" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/610" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/350" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1090" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/289" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1330" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/387" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1236" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1032" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1293" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/225" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/108" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/721" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/18" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/627" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/767" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/987" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/986" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/315" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/447" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1310" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/792" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/782" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/529" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1283" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/100" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/811" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1091" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/476" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1019" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/689" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/568" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1043" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1036" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/751" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1066" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/999" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/750" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/361" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/123" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/686" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/80" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/349" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1169" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/844" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1327" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/964" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/411" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/619" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/332" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/814" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/540" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/11" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1288" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/638" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1176" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/1238" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/420" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/173" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/463" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/578" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/834" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/122" }
+      } ,
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/en/665" }
+      }
+    ]
+  }
+}
