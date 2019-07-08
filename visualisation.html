@@ -43,14 +43,15 @@
       Connect.setRequestHeader("Content-Type", "text/json");
       Connect.send(null);
       var jsonFile = Connect.responseText;
-      callback(JSON.parse(jsonFile));
+      callback(filename, JSON.parse(jsonFile));
     }
-    function exec(file, callback) {
-      preload(file, render);
+    function exec(filename, callback) {
+      preload(filename, render);
     }
-    function render(json) {
+    function render(filename, json) {
+      var selectorID = "#result" + filename
       var config = {
-        "selector": "#resultCQ"
+        "selector": selectorID
       }
       d3sparql.htmltable(json, config)
     }
@@ -214,7 +215,7 @@
            </button>
          </div>
          <div class="modal-body">
-           <div id="resultCQ"></div>
+           <div id="resultCQ1"></div>
          </div>
          <div class="modal-footer">
            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -261,7 +262,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <div id="resultCQ"></div>
+        <div id="resultCQ2"></div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -308,7 +309,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <div id="resultCQ"></div>
+          <div id="resultCQ3"></div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -358,7 +359,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <div id="resultCQ"></div>
+        <div id="resultCQ4"></div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -407,7 +408,7 @@
            </button>
          </div>
          <div class="modal-body">
-           <div id="resultCQ"></div>
+           <div id="resultCQ5"></div>
          </div>
          <div class="modal-footer">
            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -467,7 +468,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <div id="resultCQ"></div>
+        <div id="resultCQ6"></div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -529,7 +530,7 @@
            </button>
          </div>
          <div class="modal-body">
-           <div id="resultCQ"></div>
+           <div id="resultCQ7"></div>
          </div>
          <div class="modal-footer">
            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -586,7 +587,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <div id="resultCQ"></div>
+        <div id="resultCQ8"></div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -654,7 +655,7 @@
            </button>
          </div>
          <div class="modal-body">
-           <div id="resultCQ"></div>
+           <div id="resultCQ9"></div>
          </div>
          <div class="modal-footer">
            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -721,7 +722,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <div id="resultCQ"></div>
+        <div id="resultCQ10"></div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
