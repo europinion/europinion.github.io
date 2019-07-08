@@ -29,6 +29,22 @@
   <script src="assets/highlightjs/highlight.pack.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
 
+  <!-- D3SPARQL.js -->
+  <script src="assets/d3sparql/d3.v3.min.js"></script>
+  <script src="assets/d3sparql/script.js"></script>
+  <script src="assets/eurBrain.js"></script>
+
+  <script>
+    function exec(callback) {
+      preload(render);
+    }
+    function render(json) {
+      var config = {
+        "selector": "#result"
+      }
+      d3sparql.htmltable(json, config)
+    }
+  </script>
 </head>
 <body>
   <section class="menu cid-rvgZMVDNg8" once="menu" id="menu1-k">
@@ -170,7 +186,7 @@
 	    </code>
 	   </pre>
 	</p>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCQ1">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCQ1" onclick="exec()">
           See the results
         </button>
       </div>
@@ -188,7 +204,7 @@
            </button>
          </div>
          <div class="modal-body">
-           ...
+           <div id="resultsCQ1"></div>
          </div>
          <div class="modal-footer">
            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
