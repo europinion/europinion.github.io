@@ -1,34 +1,28 @@
 .card-row {
-  padding-left: 5px;
-  padding-right: 5px;
 }
 
 .card-header {
- padding-left: 5px;
- padding-right: 5px; 
  background-color: rgba(0,0,0,0);
  border-bottom: 1px solid rgba(0,0,0,0);
 }
 
 .card-footer {
  padding-left: 5px;
- padding-right: 5px; 
+ padding-right: 5px;
  background-color: rgba(0,0,0,0);
  border-top: 1px solid rgba(0,0,0,0);
 }
 
 .each-card {
-width: 50%;
-border-style: solid, blue, 5px; 
+border-style: solid, blue, 5px;
 }
 
 .card-body {
-height: 100%; 
-padding: 0; 
+padding: 0;
 }
 
 .card-title {
-margin-top: 15px;  
+margin-top: 15px;
 }
 
 .sparql-text {
@@ -56,27 +50,27 @@ padding-bottom: 0;
 }
 
 .modal-body {
-font-size: 1rem; 
-text-align: left; 
+font-size: 1rem;
+text-align: left;
 }
 
 #resultvisualisation1 {
-font-size: 1rem; 
-text-align: left; 
+font-size: 1rem;
+text-align: left;
 }
 
 #resultvisualisation2_daily{
-font-size: 1rem; 
-text-align: left; 
+font-size: 1rem;
+text-align: left;
 }
 
 #resultvisualisation3_lang {
-font-size: 1rem; 
-text-align: left; 
+font-size: 1rem;
+text-align: left;
 }
 
 .btn btn-primary button-card {
-padding-bottom: 0; 
+padding-bottom: 0;
 }
 
 @media only screen and (max-width: 768px) {
