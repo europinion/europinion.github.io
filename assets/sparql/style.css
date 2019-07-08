@@ -1,6 +1,12 @@
 .card-row {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.card-header {
+ padding-left: 5px;
+ padding-right: 5px; 
+ border-style-bottom: 0; 
 }
 
 .each-card {
@@ -12,7 +18,7 @@ height: 100%;
 }
 
 .sql sparql-text {
-  font-size: 1rem;
+  font-size: 1vh;
   text-align: left;
   padding: 0;
   margin: 0;
