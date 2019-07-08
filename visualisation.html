@@ -34,10 +34,9 @@
   <script src="assets/d3sparql/script.js"></script>
 
   <script>
-    function preload(file, callback) {
+    function preload(filename, callback) {
       var Connect = new XMLHttpRequest();
-      var filePath = "assets/results/";
-      var filePath = filePath.concat(String(file), ".json");
+      var filePath = "assets/results/" + filename + ".json";
       console.log(filePath)
       Connect.open("GET", filePath, false);
       Connect.setRequestHeader("Content-Type", "text/json");
@@ -702,7 +701,7 @@
 	    </code>
 	  </pre>
 	</p>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCQ10" onclick="exec("CQ10")">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCQ10" onclick="exec("CQ10.json")">
           See the results
         </button>
       </div>
