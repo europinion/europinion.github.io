@@ -36,7 +36,9 @@
   <script>
     function preload(file, callback) {
       var Connect = new XMLHttpRequest();
-      Connect.open("GET", "assets/results/" + file + ".json", false);
+      var filePath = "assets/results/" + file + ".json";
+      console.log(filePath)
+      Connect.open("GET", filePath, false);
       Connect.setRequestHeader("Content-Type", "text/json");
       Connect.send(null);
       var jsonFile = Connect.responseText;
