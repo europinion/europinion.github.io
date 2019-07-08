@@ -146,7 +146,7 @@
   PREFIX eur: &#60;http://www.europinion.com/&#62;
 
   SELECT ?lang
-  (COUNT(?tweet) AS ?tweet_count)
+  (COUNT(DISTINCT ?tweet) AS ?tweet_count)
   (SUM(?avg_score) AS ?tot_score)
   (?tot_score/?tweet_count AS ?final_score)
 
@@ -230,7 +230,7 @@
   PREFIX eur: &#60;http://www.europinion.com/&#62;
 
   SELECT ?date
-  (COUNT(?tweet) AS ?tweet_count)
+  (COUNT(DISTINCT ?tweet) AS ?tweet_count)
   (SUM(?avg_score) AS ?tot_avg_score)
   (?tot_avg_score/?tweet_count AS ?daily_avg_score)
 
@@ -308,7 +308,7 @@
   BASE &#60;http://www.europinion.com/&#62;
   PREFIX eur: &#60;http://www.europinion.com/&#62;
 
-  SELECT ?tweet ?p_score ?n_score
+  SELECT ?tweet ?lang ?p_score ?n_score
   WHERE {
     {&#60;2019/&#62; eur:lang ?lang.
      ?lang eur:hasTweet ?tweet.
