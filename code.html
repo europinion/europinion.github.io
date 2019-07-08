@@ -243,7 +243,9 @@
                     <div id="tab3" class="tab-pane" role="tabpanel">
                         <div class="row">
                             <div class="col-md-12">
-                              <p class="mbr-section-subtitle mbr-fonts-style align-center pb-3 mbr-light display-7">Scripting all our processes in Python allowed us to efficiently and mostly automatically acquire, clean, translate, and analyse our dataset of nearly 100.000 Tweets. Each step of our workflow had one dedicated script. For the sake of intersubjective reproducibility, the following page contains our code. If you are not familiar with programming, you can find explanatory texts.</p>
+                              <p class="mbr-section-subtitle mbr-fonts-style align-center pb-3 mbr-light display-7">Our first draft of Europinion already included the objective to represent the opinion and the sentiment of all EU citizens. For achieving this goal, we needed to acquire Tweets in all 24 official EU languages. However, Sentilo requires the data to be in English. To analyse our data, we, hence, needed to translate strings with a total length of about 9.000.000 characters.</p>
+
+                              <p class="mbr-section-subtitle mbr-fonts-style align-center pb-1 mbr-light display-7">Most services like Google are monetising their APIs nowadays – analysing 9.000.000 characters with Google is not possible for a no-budget project (<a href="https://cloud.google.com/translate/pricing" class="text-info" target="_blank">$20/one million chr.</a>). The Russian company <a href="https://yandex.com" class="text-info" target="_blank">Yandex</a> offers a <a href="https://tech.yandex.com/translate/" class="text-info" target="_blank">Translate API</a>, which is, to some extent, free. The API supports the transfer of 10.000 characters at a time. Given that an average Tweet has only 90 characters, we decided to write a script which first groups Tweets into packages and then transfers the data.</p>
                               <pre>
                                   <code class="python">
   # -*- coding: utf-8 -*-
