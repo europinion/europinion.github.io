@@ -1,14 +1,17 @@
 from TwitterAPI import TwitterAPI, TwitterPager
 import csv
 
-consumer_key='aH6EHC8TvJ6S1AksCciYDVy57'
-consumer_secret='tCdV1EmwzipXAsm3bIZ34vaI1FRvz6LKPfCb5ewHjY8vvd8dGo'
-access_token_key='271587996-zaxPcnNBKFWLwKApEfEfwMwbxbes1KkHYdaVRldE'
-access_token_secret='C4Zto7L8bybTvcZbDSw4kJtbEjB7t3TgMXfVOajqp2oZZ'
+### Twitter API Credentials ###
+consumer_key='###'
+consumer_secret='###'
+access_token_key='###'
+access_token_secret='###'
 
+### Product Selection ###
 PRODUCT = '30day'
 LABEL = 'EURELsandbox'
 
+### Filepath for Storing ###
 csvFile = open('download.csv', 'a')
 
 csvWriter = csv.writer(csvFile)
@@ -19,7 +22,7 @@ count_retweets = 0
 api = TwitterAPI(consumer_key,consumer_secret,access_token_key,access_token_secret)
 
 data = TwitterPager(api, 'tweets/search/%s/:%s' % (PRODUCT, LABEL),
-                {'query':'European Elections lang:en', 'fromDate':'201905270001', 'toDate':'201905281401'})
+                {'query':'European Elections lang:en', 'fromDate':'201905270001', 'toDate':'201906022359'})
 
 for tweet in data.get_iterator():
     if 'retweeted_status' not in tweet:

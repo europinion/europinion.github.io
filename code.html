@@ -95,45 +95,31 @@ w<!DOCTYPE html>
                               <p class="mbr-section-subtitle mbr-fonts-style align-left pb-3 mbr-light display-7">We acquired the data by exploiting the <a href="https://developer.twitter.com/en.html" class="text-info" target="_blank">Twitter API</a>. The Twitter API is available as a free version and as a premium version. The premium version can is available without cost for a limited amount of requests. We opt for the premium because the free version only offers the download of Tweets posted within the last seven days. In the following script, we first acquired the data by using the <a href="https://github.com/geduldig/TwitterAPI" class="text-info" target="_blank">TwitterAPI</a> library, and then we used the <a href="https://pandas.pydata.org" class="text-info" target="_blank">Pandas</a> library to store the tweets within a CSV file.</p> <p class="mbr-section-subtitle mbr-fonts-style align-left pb-1 mbr-light display-7">The script shows that we are removing retweets. We consider retweets as duplicates of information. However, we believe the times an original Tweets has been retweeted strengenths its importance and, hence, we store this information adequately.</p>
                               <pre>
                                   <code class="python">
-  #### It is maybe necessary to install the libraries first. You can install them as any other Python library.
   from TwitterAPI import TwitterAPI, TwitterPager
   import csv
 
-
-  #### Note:
-  #### The script downloads ALL tweets between the 27th May and 2nd June (included). Hence, we have all tweets of one week.
-  #### We can always decide on a later point whether we use all the tweets or not.
-  #### The script does wait if you have reached your request limit. The script indicates the time it has to wait in seconds.
-
-
-  #### First, input Twitter app/api credentials
+  ### Twitter API Credentials ###
   consumer_key='###'
   consumer_secret='###'
   access_token_key='###'
   access_token_secret='###'
 
-  # Nothing to do here.
+  ### Product Selection ###
   PRODUCT = '30day'
   LABEL = 'EURELsandbox'
 
-  #### Then, rename the file "en-english.csv" to the language which you are downloading.
-  #### In this way we have separated files for each language.
+  ### Filepath for Storing ###
   csvFile = open('download.csv', 'a')
 
-  # Nothing to do here. The next lines just prepare the file, i.e. it names the columns.
   csvWriter = csv.writer(csvFile)
   csvWriter.writerow(["created_at", "lang", "screen_name", "location", "full_text", "urls", "tags", "mentions", "retweet_count", "favorite_count"])
 
-  # Nothing to do here.
   count_tweets = 0
   count_retweets = 0
   api = TwitterAPI(consumer_key,consumer_secret,access_token_key,access_token_secret)
 
-  #### Now change 'European Elections' in q to the correct query terms. (Leave -filter:retweets as it is.)
-  #### Lastly, either change lang="en" to the correct value or delete lang="en" completely if language is not supported.
-  #### In our gDoc you find a list of the correct Twitter values for lang="". If there is no value in the list, the language is not supported.
   data = TwitterPager(api, 'tweets/search/%s/:%s' % (PRODUCT, LABEL),
-                  {'query':'European Elections lang:en', 'fromDate':'201905270001', 'toDate':'201905281401'})
+                  {'query':'European Elections lang:en', 'fromDate':'201905270001', 'toDate':'201906022359'})
 
   for tweet in data.get_iterator():
       if 'retweeted_status' not in tweet:
