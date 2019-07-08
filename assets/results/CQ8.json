@@ -1,0 +1,13 @@
+{
+  "head": {
+    "vars": [ "tweet" , "score" ]
+  } ,
+  "results": {
+    "bindings": [
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/cs/16" } ,
+        "score": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#double" , "value": "-0.625" }
+      }
+    ]
+  }
+}

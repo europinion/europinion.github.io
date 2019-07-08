@@ -1,0 +1,57 @@
+{
+  "head": {
+    "vars": [ "lang" , "tweet_count" , "positive_tweets" , "percentage" ]
+  } ,
+  "results": {
+    "bindings": [
+      {
+        "lang": { "type": "uri" , "value": "http://www.europinion.com/2019/sk/" } ,
+        "tweet_count": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "value": "2" } ,
+        "positive_tweets": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "value": "2" } ,
+        "percentage": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#decimal" , "value": "100" }
+      } ,
+      {
+        "lang": { "type": "uri" , "value": "http://www.europinion.com/2019/fi/" } ,
+        "tweet_count": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "value": "35" } ,
+        "positive_tweets": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "value": "26" } ,
+        "percentage": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#decimal" , "value": "74" }
+      } ,
+      {
+        "lang": { "type": "uri" , "value": "http://www.europinion.com/2019/da/" } ,
+        "tweet_count": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "value": "62" } ,
+        "positive_tweets": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "value": "46" } ,
+        "percentage": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#decimal" , "value": "74" }
+      } ,
+      {
+        "lang": { "type": "uri" , "value": "http://www.europinion.com/2019/cs/" } ,
+        "tweet_count": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "value": "115" } ,
+        "positive_tweets": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "value": "84" } ,
+        "percentage": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#decimal" , "value": "73" }
+      } ,
+      {
+        "lang": { "type": "uri" , "value": "http://www.europinion.com/2019/hu/" } ,
+        "tweet_count": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "value": "10" } ,
+        "positive_tweets": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "value": "7" } ,
+        "percentage": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#decimal" , "value": "70" }
+      } ,
+      {
+        "lang": { "type": "uri" , "value": "http://www.europinion.com/2019/sv/" } ,
+        "tweet_count": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "value": "364" } ,
+        "positive_tweets": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "value": "254" } ,
+        "percentage": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#decimal" , "value": "70" }
+      } ,
+      {
+        "lang": { "type": "uri" , "value": "http://www.europinion.com/2019/bg/" } ,
+        "tweet_count": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "value": "20" } ,
+        "positive_tweets": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "value": "13" } ,
+        "percentage": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#decimal" , "value": "65" }
+      } ,
+      {
+        "lang": { "type": "uri" , "value": "http://www.europinion.com/2019/et/" } ,
+        "tweet_count": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "value": "6" } ,
+        "positive_tweets": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "value": "3" } ,
+        "percentage": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#decimal" , "value": "50" }
+      }
+    ]
+  }
+}
