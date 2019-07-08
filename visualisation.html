@@ -132,15 +132,48 @@
                             <div class="col-md-12">
                                 <p class="mbr-text py-5 mbr-fonts-style display-7">GRAPH</p>
                                 <canvas id="myChart"></canvas>
-
-                                  <div id="visualisation_1" class="card align-center col-12 collapse show mbr-fonts-style display-2" aria-labelledby="headingOne" data-parent="#graph-menu"> <!-- div containing the first and only collapsible -->
+                                <div class="code-in-visualisation">
+                                  <div id="visualisation_1" class="card align-center collapse show mbr-fonts-style display-2" aria-labelledby="headingOne" data-parent="#graph-menu"> <!-- div containing the first and only collapsible -->
 				      <div class="card-header">Bar Chart - Stacked</div>
 					  <div class="card-body">
 						  <h5 class="card-title">Question...????</h5>
 						  <p class="card-text">
 						     <pre class="pre-code"> 
 						     <code class="sql sparql-text">
-  here goes the code
+BASE &#60;http://www.europinion.com/&#62;
+PREFIX eur: &#60;http://www.europinion.com/&#62;
+
+SELECT ?lang 
+(COUNT(?tweet) AS ?tweet_count)
+(SUM(?avg_score) AS ?tot_score)
+(?tot_score/?tweet_count AS ?final_score)  
+
+WHERE { 
+  {&#60;2019/&#62; eur:lang ?lang.
+   ?lang eur:hasTweet ?tweet.
+   ?tweet eur:hasAvgNegative ?n_score. 
+    FILTER NOT EXISTS {?tweet eur:hasAvgPositive ?p_score}
+    BIND((?n_score) AS ?avg_score)
+   } 
+UNION
+{
+  &#60;2019/&#62; eur:lang ?lang.
+  ?lang eur:hasTweet ?tweet.
+  ?tweet eur:hasAvgPositive ?p_score.
+    FILTER NOT EXISTS {?tweet eur:hasAvgNegative ?n_score}
+    BIND((?p_score) AS ?avg_score)
+}
+UNION
+  {
+  &#60;2019/&#62; eur:lang ?lang.
+  ?lang eur:hasTweet ?tweet.
+  ?tweet eur:hasAvgPositive ?p_score.
+  ?tweet eur:hasAvgNegative ?n_score. 
+    BIND((?n_score+?p_score)/2 as ?avg_score)
+}
+}
+
+GROUP BY (?lang)
 	                                             </code>
 						     </pre>
 						  </p>
@@ -173,6 +206,7 @@
                             </div> 	
                         </div>
                     </div>
+		    </div>
                     <div id="tab2" class="tab-pane" role="tabpanel">
                         <div class="row">
                             <div class="col-md-12">
