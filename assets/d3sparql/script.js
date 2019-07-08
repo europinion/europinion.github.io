@@ -296,7 +296,6 @@ d3sparql.htmltable = function(json, config) {
 
   // default CSS
   table.style({
-    "margin": "10px"
   })
   table.selectAll("th").style({
     "background": "#eeeeee",
