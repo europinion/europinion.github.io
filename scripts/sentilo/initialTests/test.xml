@@ -1,0 +1,138 @@
+<rdf:RDF
+    xmlns:j.0="http://www.ontologydesignpatterns.org/ont/vn/abox/role/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.1="http://ontologydesignpatterns.org/ont/sentilo.owl#"
+    xmlns:j.2="http://www.essepuntato.it/2008/12/earmark#"
+    xmlns:j.4="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#"
+    xmlns:j.3="http://ontologydesignpatterns.org/cp/owl/semiotics.owl#"
+    xmlns:j.5="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:j.6="http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://ontologydesignpatterns.org/ont/sentilo.owl#opinionated_context_7fa636acd54bb89c9c7dcf518cc18242">
+    <j.1:hasSubTopic rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_1"/>
+    <j.1:hasTopic rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#determine_1"/>
+    <j.1:hasTopic rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#do_1"/>
+    <j.1:hasSubTopic rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_2"/>
+    <j.1:hasSubTopic rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Sentilo"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_18_27_determine">
+    <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
+    <j.5:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#VB"/>
+    <j.3:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Determine"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">determine</rdfs:label>
+    <j.3:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#determine_1"/>
+    <j.2:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">27</j.2:ends>
+    <j.2:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+    <j.2:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">18</j.2:begins>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_0_4_This">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This</rdfs:label>
+    <j.2:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</j.2:begins>
+    <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
+    <j.2:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+    <j.2:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</j.2:ends>
+    <j.3:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_1"/>
+    <j.5:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#DT"/>
+    <j.3:hasInterpretant rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Do">
+    <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_10_14_test">
+    <j.3:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#test_1"/>
+    <j.2:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">10</j.2:begins>
+    <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
+    <j.5:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NN"/>
+    <j.2:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">14</j.2:ends>
+    <j.3:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Test"/>
+    <j.2:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">test</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Determine">
+    <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+    <owl:equivalentClass rdf:resource="http://www.ontologydesignpatterns.org/ont/vn/data/Determine_84000000"/>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2006/03/wn/wn30/instances/synset-determine-verb-1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_33_40_Sentilo">
+    <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
+    <j.5:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NNP"/>
+    <j.2:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">40</j.2:ends>
+    <j.2:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+    <j.2:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">33</j.2:begins>
+    <j.3:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Sentilo"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sentilo</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_28_32_what">
+    <j.2:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">28</j.2:begins>
+    <j.5:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#WP"/>
+    <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
+    <j.2:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">32</j.2:ends>
+    <j.2:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+    <j.3:hasInterpretant rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <j.3:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_2"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">what</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#do_1">
+    <j.6:patient_dotted rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_2"/>
+    <j.6:agent_dotted rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Sentilo"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Do"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Sentilo">
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Sintiru"/>
+    <j.1:participatesIn rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#do_1"/>
+    <j.1:hasScore rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</j.1:hasScore>
+    <j.1:playsSensitiveRole rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#do_1"/>
+    <j.1:hasAvgScore>0.000</j.1:hasAvgScore>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ontologydesignpatterns.org/ont/sentilo.owl#opinion_sentence_7fa636acd54bb89c9c7dcf518cc18242">
+    <j.1:hasOpinionatedContext rdf:resource="http://ontologydesignpatterns.org/ont/sentilo.owl#opinionated_context_7fa636acd54bb89c9c7dcf518cc18242"/>
+    <j.1:hasOpinionTriggerContext rdf:resource="http://ontologydesignpatterns.org/ont/sentilo.owl#opinion_trigger_context_7fa636acd54bb89c9c7dcf518cc18242"/>
+    <j.1:hasText>"This is a test to determine what Sentilo is doing."</j.1:hasText>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <j.1:participatesIn rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#determine_1"/>
+    <j.1:participatesIn rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#do_1"/>
+    <j.1:isPositivelyAffectedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#determine_1"/>
+    <j.1:hasScore rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.07</j.1:hasScore>
+    <j.1:playsSensitiveRole rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#determine_1"/>
+    <j.1:hasScore rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</j.1:hasScore>
+    <j.1:playsSensitiveRole rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#do_1"/>
+    <j.1:hasPosScore>0.070</j.1:hasPosScore>
+    <j.1:hasAvgScore>0.035</j.1:hasAvgScore>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#determine_1">
+    <j.0:Agent_dotted rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_1"/>
+    <j.0:Theme_dotted rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_2"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Determine"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_44_49_doing">
+    <j.2:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">44</j.2:begins>
+    <j.2:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">49</j.2:ends>
+    <j.3:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Do"/>
+    <j.3:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#do_1"/>
+    <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
+    <j.2:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+    <j.5:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#VBG"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doing</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ontologydesignpatterns.org/ont/sentilo.owl#opinion_sentence">
+    <j.1:hasText>This is a test to determine what Sentilo is doing.</j.1:hasText>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_1">
+    <j.1:hasAvgScore>0.070</j.1:hasAvgScore>
+    <j.1:hasPosScore>0.070</j.1:hasPosScore>
+    <j.1:playsSensitiveRole rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#determine_1"/>
+    <j.1:hasScore rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.07</j.1:hasScore>
+    <j.1:isPositivelyAffectedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#determine_1"/>
+    <j.1:participatesIn rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#determine_1"/>
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Test"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Test">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_cognition"/>
+    <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/d0.owl#CognitiveEntity"/>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2006/03/wn/wn30/instances/synset-trial-noun-2"/>
+  </rdf:Description>
+</rdf:RDF>
