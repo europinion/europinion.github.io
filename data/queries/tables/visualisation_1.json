@@ -1,4 +1,4 @@
-{
+ {
   "head": {
     "vars": [ "lang" , "tweet_count" , "tot_score" , "final_score" ]
   } ,
