@@ -35,6 +35,14 @@
   <script src="assets/eurBrain.js"></script>
 
   <script>
+    function preload(callback) {
+      var Connect = new XMLHttpRequest();
+      Connect.open("GET", "assets/results/CQ10.json", false);
+      Connect.setRequestHeader("Content-Type", "text/json");
+      Connect.send(null);
+      var jsonFile = Connect.responseText;
+      callback(JSON.parse(jsonFile));
+    }
     function exec(callback) {
       preload(render);
     }
