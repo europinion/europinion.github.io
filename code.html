@@ -343,7 +343,9 @@
                     </div>
                     <div id="tab4" class="tab-pane" role="tabpanel">
                         <div class="row">
-                          <p class="mbr-section-subtitle mbr-fonts-style align-center pb-3 mbr-light display-7">Scripting all our processes in Python allowed us to efficiently and mostly automatically acquire, clean, translate, and analyse our dataset of nearly 100.000 Tweets. Each step of our workflow had one dedicated script. For the sake of intersubjective reproducibility, the following page contains our code. If you are not familiar with programming, you can find explanatory texts.</p>
+                          <p class="mbr-section-subtitle mbr-fonts-style align-center pb-3 mbr-light display-7">Generally, we used Sentilo for the sentiment analyse. Sentilo returns a sentiment network for each Tweet, from which we then extracted the sentiment values. The analyse with Sentilo delivered us the data for our ultimate opinion and sentiment mining. The analysing step also included the restructuring of our data. We used the sentiment scores and our CSV files to populate our Knowledge Graph. The flexible structure of a graph enables us to further enrich the data with future additions, like the <a href="http://saifmohammad.com/WebPages/lexicons.html#terms" class="text-info" target="_blank">Sentiment and Emotion Lexicons</a> by Saif M. Mohammad.</p>
+
+                          <p class="mbr-section-subtitle mbr-fonts-style align-center pb-3 mbr-light display-7">The following script transmits the data to Sentilo. The code is written in such a way that there are no more than five HTTP requests open between the client and the server at the same time. In this way, we intended to avoid overloading the server. We used the library <a href="https://github.com/RDFLib/rdflib" class="text-info" target="_blank">RDFLib</a> to add the data as triples (subject, predicate and object) to our graph. The final file was an RDF/XML.</p>
                           <pre>
                               <code class="python">
   # -*- coding: utf-8 -*-
