@@ -819,8 +819,8 @@
   PREFIX eur: &#60;http://www.europinion.com/&#62;
 
   SELECT ?lang
-  (COUNT(?tweet) AS ?tweet_count)
-  (COUNT(?p_tweet) AS ?positive_tweets)
+  (COUNT(DISTINCT ?tweet) AS ?tweet_count)
+  (COUNT(DISTINCT ?p_tweet) AS ?positive_tweets)
   (ROUND(?positive_tweets*100/?tweet_count) AS ?percentage)
   WHERE {
     {&#60;2019/&#62; eur:lang ?lang.
@@ -828,15 +828,17 @@
   UNION
   {
     &#60;2019/&#62; eur:lang ?lang.
-    ?lang eur:hasTweet ?p_tweet.
-    ?p_tweet eur:hasAvgPositive ?avg_score.
+    ?lang eur:hasTweet ?tweet.
+    ?tweet eur:hasAvgPositive ?avg_score.
+    BIND((?tweet) AS ?p_tweet)
   }
   UNION
   {  &#60;2019/&#62; eur:lang ?lang.
-     ?lang eur:hasTweet ?p_tweet.
-     ?p_tweet eur:hasAvgPositive ?p_score.
-     ?p_tweet eur:hasAvgNegative ?n_score.
+     ?lang eur:hasTweet ?tweet.
+     ?tweet eur:hasAvgPositive ?p_score.
+     ?tweet eur:hasAvgNegative ?n_score.
      BIND((?n_score+?p_score)/2 as ?avg_score)
+     BIND((?tweet) AS ?p_tweet)
      FILTER(?avg_score &#62; 0)
   }
   }
@@ -885,8 +887,8 @@
   PREFIX eur: &#60;http://www.europinion.com/&#62;
 
   SELECT ?lang
-  (COUNT(?tweet) AS ?tweet_count)
-  (COUNT(?p_tweet) AS ?positive_tweets)
+  (COUNT(DISTINCT ?tweet) AS ?tweet_count)
+  (COUNT(DISTINCT ?p_tweet) AS ?positive_tweets)
   (ROUND(?positive_tweets*100/?tweet_count) AS ?percentage)
 
   WHERE {
@@ -895,15 +897,17 @@
   UNION
   {
     &#60;2019/&#62; eur:lang ?lang.
-    ?lang eur:hasTweet ?p_tweet.
-    ?p_tweet eur:hasAvgPositive ?score.
+    ?lang eur:hasTweet ?tweet.
+    ?tweet eur:hasAvgPositive ?score.
+    BIND((?tweet) AS ?p_tweet)
   }
     UNION
   {  &#60;2019/&#62; eur:lang ?lang.
-     ?lang eur:hasTweet ?p_tweet.
-     ?p_tweet eur:hasAvgPositive ?p_score.
-     ?p_tweet eur:hasAvgNegative ?n_score.
+     ?lang eur:hasTweet ?tweet.
+     ?tweet eur:hasAvgPositive ?p_score.
+     ?tweet eur:hasAvgNegative ?n_score.
      BIND((?n_score+?p_score)/2 as ?avg_score)
+     BIND((?tweet) AS ?p_tweet)
      FILTER(?avg_score &#62; 0)
   }
   }
