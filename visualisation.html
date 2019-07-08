@@ -99,8 +99,8 @@
       <div class="container">
         <div class="media-container-row">
             <div class="title col-12 col-l-8">
-                <h2><button class="coll-button align-center mb-0 pb-3 mbr-fonts-style display-2 bg-transparent" type="button" data-toggle="collapse" data-target="#visualisations"><strong>Visualisations</strong></button></h2>
-                <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5">SPARQL query results in pretty.</h3>
+                <h2><button class="coll-button align-center mb-0 pb-3 mbr-fonts-style display-2 bg-transparent" type="button" data-toggle="collapse" data-target="#visualisations"><strong>Queries</strong></button></h2>
+                <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5">Sparkling SPARQL results.</h3>
             </div>
         </div>
     </div>
@@ -113,7 +113,7 @@
 
 
     <div class="container">
-        <h3 class="mbr-section-title align-center pb-5 mbr-fonts-style display-5">Some explanatory text</h3>
+        <p class="mbr-section-subtitle mbr-fonts-style align-center pb-5 mbr-light display-7">Some explanatory text</p>
         <div class="media-container-row">
             <div class="col-12 col-l-8">
                 <ul class="nav nav-tabs" role="tablist">
@@ -139,42 +139,42 @@
 					  <div class="card-body">
 						  <h5 class="card-title">Which is the average positive and average negative score for each lang?</h5>
 						  <p class="card-text">
-						     <pre class="pre-code"> 
+						     <pre class="pre-code">
 						     <code class="sql sparql-text">
-BASE &#60;http://www.europinion.com/&#62;
-PREFIX eur: &#60;http://www.europinion.com/&#62;
+  BASE &#60;http://www.europinion.com/&#62;
+  PREFIX eur: &#60;http://www.europinion.com/&#62;
 
-SELECT ?lang 
-(COUNT(?tweet) AS ?tweet_count)
-(SUM(?avg_score) AS ?tot_score)
-(?tot_score/?tweet_count AS ?final_score)  
+  SELECT ?lang
+  (COUNT(?tweet) AS ?tweet_count)
+  (SUM(?avg_score) AS ?tot_score)
+  (?tot_score/?tweet_count AS ?final_score)
 
-WHERE { 
-  {&#60;2019/&#62; eur:lang ?lang.
-   ?lang eur:hasTweet ?tweet.
-   ?tweet eur:hasAvgNegative ?n_score. 
-    FILTER NOT EXISTS {?tweet eur:hasAvgPositive ?p_score}
-    BIND((?n_score) AS ?avg_score)
-   } 
-UNION
-{
-  &#60;2019/&#62; eur:lang ?lang.
-  ?lang eur:hasTweet ?tweet.
-  ?tweet eur:hasAvgPositive ?p_score.
-    FILTER NOT EXISTS {?tweet eur:hasAvgNegative ?n_score}
-    BIND((?p_score) AS ?avg_score)
-}
-UNION
+  WHERE {
+    {&#60;2019/&#62; eur:lang ?lang.
+     ?lang eur:hasTweet ?tweet.
+     ?tweet eur:hasAvgNegative ?n_score.
+      FILTER NOT EXISTS {?tweet eur:hasAvgPositive ?p_score}
+      BIND((?n_score) AS ?avg_score)
+     }
+  UNION
   {
-  &#60;2019/&#62; eur:lang ?lang.
-  ?lang eur:hasTweet ?tweet.
-  ?tweet eur:hasAvgPositive ?p_score.
-  ?tweet eur:hasAvgNegative ?n_score. 
-    BIND((?n_score+?p_score)/2 as ?avg_score)
-}
-}
+    &#60;2019/&#62; eur:lang ?lang.
+    ?lang eur:hasTweet ?tweet.
+    ?tweet eur:hasAvgPositive ?p_score.
+      FILTER NOT EXISTS {?tweet eur:hasAvgNegative ?n_score}
+      BIND((?p_score) AS ?avg_score)
+  }
+  UNION
+    {
+    &#60;2019/&#62; eur:lang ?lang.
+    ?lang eur:hasTweet ?tweet.
+    ?tweet eur:hasAvgPositive ?p_score.
+    ?tweet eur:hasAvgNegative ?n_score.
+      BIND((?n_score+?p_score)/2 as ?avg_score)
+  }
+  }
 
-GROUP BY (?lang)
+  GROUP BY (?lang)
 	                                             </code>
 						     </pre>
 						  </p>
@@ -204,9 +204,9 @@ GROUP BY (?lang)
 					     </div>
 					   </div>
 				</div>
-                            </div> 	
+                            </div>
                         </div> <!-- end tab 1-->
-		    
+
                     <div id="tab2" class="tab-pane" role="tabpanel">
                         <div class="row">
                             <div class="col-md-12">
@@ -221,38 +221,38 @@ GROUP BY (?lang)
 					  <div class="card-body">
 						  <h5 class="card-title">How did emotions and interest change over time after the elections?</h5>
 						  <p class="card-text">
-						     <pre class="pre-code"> 
+						     <pre class="pre-code">
 						     <code class="sql sparql-text">
-BASE &#60;http://www.europinion.com/&#62;
-PREFIX eur: &#60;http://www.europinion.com/&#62;
+  BASE &#60;http://www.europinion.com/&#62;
+  PREFIX eur: &#60;http://www.europinion.com/&#62;
 
-SELECT ?date 
-(COUNT(?tweet) AS ?tweet_count)
-(SUM(?avg_score) AS ?tot_avg_score)
-(?tot_avg_score/?tweet_count AS ?daily_avg_score)  
+  SELECT ?date
+  (COUNT(?tweet) AS ?tweet_count)
+  (SUM(?avg_score) AS ?tot_avg_score)
+  (?tot_avg_score/?tweet_count AS ?daily_avg_score)
 
-WHERE { 
-  {?tweet eur:hasDate ?date.
-   ?tweet eur:hasAvgNegative ?n_score. 
-   FILTER NOT EXISTS {?tweet eur:hasAvgPositive ?p_score}
-   BIND((?n_score) AS ?avg_score)
-   } 
-UNION
-  {?tweet eur:hasDate ?date.
-   ?tweet eur:hasAvgPositive ?p_score.
-   FILTER NOT EXISTS {?tweet eur:hasAvgNegative ?n_score}
-   BIND((?p_score) AS ?avg_score)
-}
-UNION
-  {?tweet eur:hasDate ?date.
-   ?tweet eur:hasAvgPositive ?p_score.
-   ?tweet eur:hasAvgNegative ?n_score. 
-   BIND((?n_score+?p_score)/2 as ?avg_score)
-}
-}
+  WHERE {
+    {?tweet eur:hasDate ?date.
+     ?tweet eur:hasAvgNegative ?n_score.
+     FILTER NOT EXISTS {?tweet eur:hasAvgPositive ?p_score}
+     BIND((?n_score) AS ?avg_score)
+     }
+  UNION
+    {?tweet eur:hasDate ?date.
+     ?tweet eur:hasAvgPositive ?p_score.
+     FILTER NOT EXISTS {?tweet eur:hasAvgNegative ?n_score}
+     BIND((?p_score) AS ?avg_score)
+  }
+  UNION
+    {?tweet eur:hasDate ?date.
+     ?tweet eur:hasAvgPositive ?p_score.
+     ?tweet eur:hasAvgNegative ?n_score.
+     BIND((?n_score+?p_score)/2 as ?avg_score)
+  }
+  }
 
-GROUP BY (?date)
-ORDER BY ASC (?date)
+  GROUP BY (?date)
+  ORDER BY ASC (?date)
 	                                             </code>
 						     </pre>
 						  </p>
@@ -282,7 +282,7 @@ ORDER BY ASC (?date)
 					     </div>
 					   </div>
 				</div>
-                            </div> 	
+                            </div>
                         </div> <!--end tab 2-->
 
 
@@ -294,40 +294,40 @@ ORDER BY ASC (?date)
                                   <canvas id="myScatter"></canvas>
                             </div>
 			       <div class="code-in-visualisation col-md-12">
-                                  <div class="card align-center collapse show mbr-fonts-style display-2" aria-labelledby="headingOne" data-parent="#graph-menu"> 
+                                  <div class="card align-center collapse show mbr-fonts-style display-2" aria-labelledby="headingOne" data-parent="#graph-menu">
 				      <div class="card-header">The SPARQL query</div>
 					  <div class="card-body">
 						  <h5 class="card-title">Which is the average negative and average positive score for each individual tweet?</h5>
 						  <p class="card-text">
-						     <pre class="pre-code"> 
+						     <pre class="pre-code">
 						     <code class="sql sparql-text">
-BASE &#60;http://www.europinion.com/&#62;
-PREFIX eur: &#60;http://www.europinion.com/&#62;
+  BASE &#60;http://www.europinion.com/&#62;
+  PREFIX eur: &#60;http://www.europinion.com/&#62;
 
-SELECT ?tweet ?p_score ?n_score
-WHERE {
-  {&#60;2019/&#62; eur:lang ?lang.
-   ?lang eur:hasTweet ?tweet.
-   ?tweet eur:hasAvgNegative ?n_score. 
-    FILTER NOT EXISTS {?tweet eur:hasAvgPositive ?p_score}
-    BIND(("0") AS ?p_score)
-   } 
-UNION
-{
-  &#60;2019/&#62; eur:lang ?lang.
-  ?lang eur:hasTweet ?tweet.
-  ?tweet eur:hasAvgPositive ?p_score.
-    FILTER NOT EXISTS {?tweet eur:hasAvgNegative ?n_score}
-    BIND(("0") AS ?n_score)
-}
+  SELECT ?tweet ?p_score ?n_score
+  WHERE {
+    {&#60;2019/&#62; eur:lang ?lang.
+     ?lang eur:hasTweet ?tweet.
+     ?tweet eur:hasAvgNegative ?n_score.
+      FILTER NOT EXISTS {?tweet eur:hasAvgPositive ?p_score}
+      BIND(("0") AS ?p_score)
+     }
   UNION
   {
-  &#60;2019/&#62; eur:lang ?lang.
-  ?lang eur:hasTweet ?tweet.
-  ?tweet eur:hasAvgPositive ?p_score.
-  ?tweet eur:hasAvgNegative ?n_score. 
-}
-}
+    &#60;2019/&#62; eur:lang ?lang.
+    ?lang eur:hasTweet ?tweet.
+    ?tweet eur:hasAvgPositive ?p_score.
+      FILTER NOT EXISTS {?tweet eur:hasAvgNegative ?n_score}
+      BIND(("0") AS ?n_score)
+  }
+    UNION
+    {
+    &#60;2019/&#62; eur:lang ?lang.
+    ?lang eur:hasTweet ?tweet.
+    ?tweet eur:hasAvgPositive ?p_score.
+    ?tweet eur:hasAvgNegative ?n_score.
+    }
+  }
 	                                             </code>
 						     </pre>
 						  </p>
@@ -357,7 +357,7 @@ UNION
 					     </div>
 					   </div>
 				</div>
-                            </div> 	
+                            </div>
                         </div>
                     </div>
                 </div>
