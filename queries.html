@@ -130,7 +130,7 @@
                             <div class="col-md-12">
                                 <p class="mbr-text py-5 mbr-fonts-style display-7">GRAPH</p>
                                 <p class="mbr-text py-5 mbr-fonts-style display-7">
-                                <canvas id="myChart"></canvas>
+                                <canvas id="fig1"></canvas>
                               </p>
 			    </div>
                             <div class="code-in-visualisation col-md-12">
@@ -1050,7 +1050,8 @@
 		var options = {
 					title: {
 						display: true,
-						text: 'Chart.js Bar Chart - Stacked'
+						text: 'Average Pos/Neg Sentiment per Language',
+            fontSize: 20
 					},
 					tooltips: {
 						mode: 'index',
@@ -1059,17 +1060,25 @@
 					responsive: true,
 					scales: {
 						xAxes: [{
+              scaleLabel: {
+                display: true,
+                labelString: 'Language'
+              },
 							stacked: true,
 						}],
 						yAxes: [{
+              scaleLabel: {
+                display: true,
+                labelString: 'Average Pos/Neg Sentiment'
+              },
 							stacked: true
 						}]
 					}
 				};
 
-    var ctx = document.getElementById('myChart').getContext('2d');
+    var ctx = document.getElementById('fig1').getContext('2d');
 
-		var chart = new Chart(ctx, {
+		var fig1Chart = new Chart(ctx, {
 			type: 'bar',
 			data: data,
 			options: options
