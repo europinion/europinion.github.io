@@ -253,11 +253,7 @@ w<!DOCTYPE html>
   import requests
   import time
 
-  # Note:
-  # If you receive a very long error message, the contingent of your key is used.
-  # Follow the lastSuccess instruction to continue at the point of interruption.
-
-  # Here you add the key. (A key can be used for 1.000.000 chr/day and 10.0000.000 chr/month)
+  # A key can be used for 1.000.000 chr/day and 10.0000.000 chr/month
   key = '###'
 
   # Uncomment one file at a time to avoid issues.
@@ -265,7 +261,6 @@ w<!DOCTYPE html>
               ]
 
   ### Function for Saving to CSV ###
-  # Nothing to do here.
   def saving(response, index):
       responseJSON = response.json()
       responseLIST = responseJSON["text"][0].split(" [!] ")
@@ -283,7 +278,6 @@ w<!DOCTYPE html>
       df.to_csv(file, sep = ";", index=False)
 
   ### Sending Packages to Yandex ###
-  # Nothing to do here.
   def sending(package, index):
       text = " [!] ".join(package)
       lang = "en"
@@ -299,7 +293,6 @@ w<!DOCTYPE html>
           sending(package, index)
 
   ### Packaging Tweets with the Seperator " [!] " ###
-  # Nothing to do here.
   def packaging(lastSuccess = -1):
       package = []
       packageCount = 0
@@ -321,8 +314,7 @@ w<!DOCTYPE html>
 
 
   ### Triggering the Chain of Functions ###
-  # Here you have to uncomment/comment the code depending on if you use a NEW FILE or OLD File.
-  # For OLD FILES you have to add the lastSuccess in the brackets of packaging(lastSuccess)
+ packaging(lastSuccess)
   for file in filenames:
       ### Two types of files:
 
@@ -453,12 +445,6 @@ w<!DOCTYPE html>
       negList = [float(item[0]['value']) for item in negScoreList]
       if len(negList) > 0:
           eurGraph.add((tweetID, eur.hasAvgNegative, Literal(statistics.mean(negList))))
-
-      # eurGraph.serialize(destination='Data/4_Graphs/graph-all', format='xml')
-      # print(langID, 'Saving...', 'lastSuccess:', index, '– lastSaved:', count)
-      #
-      # if ((count%10) == 0) and (index > count):
-      #     print(langID, 'Error rate:', ((index-count)/index)*100)
 
       if ((count%10) == 0) or (index == (len(df.index) - 1)):
           eurGraph.serialize(destination='output.xml', format='xml')

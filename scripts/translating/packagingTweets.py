@@ -3,11 +3,6 @@ import pandas as pd
 import requests
 import time
 
-# Note:
-# If you receive a very long error message, the contingent of your key is used.
-# Follow the lastSuccess instruction to continue at the point of interruption.
-
-# Here you add the key. (A key can be used for 1.000.000 chr/day and 10.0000.000 chr/month)
 key = "trnsl.1.1.20190625T093708Z.70b13e001e10312c.9f1c4c27c2359a0dc21d61fc4613c8b0c7887d8d"
 
 # Uncomment one file at a time to avoid issues.
@@ -38,64 +33,59 @@ filenames = [   # DONE "Data/Translated_Tweets/bg-български.csv", DONE
             ]
 
 ### Function for Saving to CSV ###
-# Nothing to do here.
-# def saving(response, index):
-#     responseJSON = response.json()
-#     responseLIST = responseJSON["text"][0].split(" [!] ")
-#
-#     start = index - len(responseLIST) + 1
-#     end = index
-#     indices = list(range(start, end + 1))
-#     position = 0
-#
-#     for tweet in indices:
-#         df.at[tweet,"english"] = responseLIST[position]
-#         position += 1
-#
-#     print("Saving... lastSuccess:", index)
-#     df.to_csv(file, sep = ";", index=False)
+def saving(response, index):
+    responseJSON = response.json()
+    responseLIST = responseJSON["text"][0].split(" [!] ")
+
+    start = index - len(responseLIST) + 1
+    end = index
+    indices = list(range(start, end + 1))
+    position = 0
+
+    for tweet in indices:
+        df.at[tweet,"english"] = responseLIST[position]
+        position += 1
+
+    print("Saving... lastSuccess:", index)
+    df.to_csv(file, sep = ";", index=False)
 
 ### Sending Packages to Yandex ###
-# Nothing to do here.
-# def sending(package, index):
-#     text = " [!] ".join(package)
-#     lang = "en"
-#     data = {"key": key, "text": text, "lang": lang}
-#
-#     try:
-#         response = requests.post("https://translate.yandex.net/api/v1.5/tr.json/translate", data=data)
-#         saving(response, index)
-#     except requests.exceptions.RequestException as e:
-#         print(e)
-#         print("Waiting for 60 sec.")
-#         time.sleep(60)
-#         sending(package, index)
+def sending(package, index):
+    text = " [!] ".join(package)
+    lang = "en"
+    data = {"key": key, "text": text, "lang": lang}
+
+    try:
+        response = requests.post("https://translate.yandex.net/api/v1.5/tr.json/translate", data=data)
+        saving(response, index)
+    except requests.exceptions.RequestException as e:
+        print(e)
+        print("Waiting for 60 sec.")
+        time.sleep(60)
+        sending(package, index)
 
 ### Packaging Tweets with the Seperator " [!] " ###
-# Nothing to do here.
-# def packaging(lastSuccess = -1):
-#     package = []
-#     packageCount = 0
-#
-#     for index, row in df.iterrows():
-#         if sum(len(tweets) for tweets in package) < 8500 and index > lastSuccess:
-#             package.append(row["parsed_text"])
-#         if sum(len(tweets) for tweets in package) >= 8500 and len(df.index) - 1 != index:
-#             packageCount += 1
-#             print("Sending... Package nr.", packageCount, "– Progress:", round((index / (len(df.index) - 1)) * 100, 2), "%")
-#             sending(package, index)
-#             package = []
-#             time.sleep(5)
-#         elif len(df.index) - 1 == index:
-#             packageCount += 1
-#             print("Sending LAST package for", file, "– Progress:", round((index / (len(df.index) - 1)) * 100, 2), "%")
-#             sending(package, index)
-#             time.sleep(5)
+def packaging(lastSuccess = -1):
+    package = []
+    packageCount = 0
+
+    for index, row in df.iterrows():
+        if sum(len(tweets) for tweets in package) < 8500 and index > lastSuccess:
+            package.append(row["parsed_text"])
+        if sum(len(tweets) for tweets in package) >= 8500 and len(df.index) - 1 != index:
+            packageCount += 1
+            print("Sending... Package nr.", packageCount, "– Progress:", round((index / (len(df.index) - 1)) * 100, 2), "%")
+            sending(package, index)
+            package = []
+            time.sleep(5)
+        elif len(df.index) - 1 == index:
+            packageCount += 1
+            print("Sending LAST package for", file, "– Progress:", round((index / (len(df.index) - 1)) * 100, 2), "%")
+            sending(package, index)
+            time.sleep(5)
 
 
 ### Triggering the Chain of Functions ###
-# Here you have to uncomment/comment the code depending on if you use a NEW FILE or OLD File.
-# For OLD FILES you have to add the lastSuccess in the brackets of packaging(lastSuccess)
 for file in filenames:
     ### Two types of files:
 

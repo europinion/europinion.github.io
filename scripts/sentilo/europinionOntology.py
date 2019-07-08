@@ -151,12 +151,6 @@ def adding(index, row, responseDict, langID):
     if len(negList) > 0:
         eurGraph.add((tweetID, eur.hasAvgNegative, Literal(statistics.mean(negList))))
 
-    # eurGraph.serialize(destination='Data/4_Graphs/graph-all', format='xml')
-    # print(langID, 'Saving...', 'lastSuccess:', index, '– lastSaved:', count)
-    #
-    # if ((count%10) == 0) and (index > count):
-    #     print(langID, 'Error rate:', ((index-count)/index)*100)
-
     if ((count%10) == 0) or (index == (len(df.index) - 1)):
         eurGraph.serialize(destination='output_it.xml', format='xml')
         print(langID, 'lastSuccess:', index)
