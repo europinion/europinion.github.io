@@ -7,6 +7,10 @@
 width: 50%;
 }
 
+.card {
+height: 100%; 
+}
+
 .sparql-text {
   font-size: 1rem;
   text-align: left;
