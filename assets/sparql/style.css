@@ -6,6 +6,7 @@
 .card-header {
  padding-left: 5px;
  padding-right: 5px; 
+ border-style-bottom: 0; 
 }
 
 .each-card {
