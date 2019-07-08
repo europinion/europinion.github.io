@@ -52,3 +52,7 @@ text-align: left;
 font-size: 1rem; 
 text-align: left; 
 }
+
+.btn btn-primary button-card {
+padding-bottom: 0; 
+}
