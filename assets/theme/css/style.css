@@ -500,7 +500,7 @@ div[data-for^="input-range"] input {
   padding-right: 0; }
 
 .modal-dialog, .modal-content {
-  height: 80vh; }
+  height: auto; }
 
 .modal-dialog .carousel-inner {
   height: 100%;
