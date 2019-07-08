@@ -1,6 +1,6 @@
 .card-row {
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .each-card {
@@ -11,11 +11,12 @@ width: 50%;
 height: 100%; 
 }
 
-.sparql-text {
+.sql sparql-text {
   font-size: 1rem;
   text-align: left;
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 
 .my-card-link {
