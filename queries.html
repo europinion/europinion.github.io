@@ -36,7 +36,7 @@
   <script>
     function preload(filename, callback) {
       var Connect = new XMLHttpRequest();
-      var filePath = "assets/results/" + filename + ".json";
+      var filePath = "data/queries/tables/" + filename + ".json";
       Connect.open("GET", filePath, false);
       Connect.setRequestHeader("Content-Type", "text/json");
       Connect.send(null);
@@ -1029,7 +1029,7 @@
 
     var oReq = new XMLHttpRequest();
     oReq.addEventListener("load", fig3Chart);
-    oReq.open("GET", "assets/visualisations/v3.txt");
+    oReq.open("GET", "data/queries/figures/v3Fig.txt");
     oReq.send();
   </script>
 
