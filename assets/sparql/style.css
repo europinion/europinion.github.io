@@ -56,3 +56,10 @@ text-align: left;
 .btn btn-primary button-card {
 padding-bottom: 0; 
 }
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
