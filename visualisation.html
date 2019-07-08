@@ -215,6 +215,74 @@ GROUP BY (?lang)
                                   <canvas id="canvas_v2"></canvas>
                                 </p>
                             </div>
+			       <div class="code-in-visualisation col-sm-8 align-center">
+                                  <div class="card align-center collapse show mbr-fonts-style display-2" aria-labelledby="headingOne" data-parent="#graph-menu">
+				      <div class="card-header">The SPARQL query</div>
+					  <div class="card-body">
+						  <h5 class="card-title">Question...????</h5>
+						  <p class="card-text">
+						     <pre class="pre-code"> 
+						     <code class="sql sparql-text">
+BASE &#60;http://www.europinion.com/&#62;
+PREFIX eur: &#60;http://www.europinion.com/&#62;
+
+SELECT ?date 
+(COUNT(?tweet) AS ?tweet_count)
+(SUM(?avg_score) AS ?tot_avg_score)
+(?tot_avg_score/?tweet_count AS ?daily_avg_score)  
+
+WHERE { 
+  {?tweet eur:hasDate ?date.
+   ?tweet eur:hasAvgNegative ?n_score. 
+   FILTER NOT EXISTS {?tweet eur:hasAvgPositive ?p_score}
+   BIND((?n_score) AS ?avg_score)
+   } 
+UNION
+  {?tweet eur:hasDate ?date.
+   ?tweet eur:hasAvgPositive ?p_score.
+   FILTER NOT EXISTS {?tweet eur:hasAvgNegative ?n_score}
+   BIND((?p_score) AS ?avg_score)
+}
+UNION
+  {?tweet eur:hasDate ?date.
+   ?tweet eur:hasAvgPositive ?p_score.
+   ?tweet eur:hasAvgNegative ?n_score. 
+   BIND((?n_score+?p_score)/2 as ?avg_score)
+}
+}
+
+GROUP BY (?date)
+ORDER BY ASC (?date)
+	                                             </code>
+						     </pre>
+						  </p>
+					  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalvisualisation2" onclick="exec('visualisation_2_daily')">
+						  See the results
+					  </button>
+					</div>
+				    </div>
+
+					   <!-- Modal -->
+					   <div class="modal fade" id="modalvisualisation2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					     <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+					       <div class="modal-content">
+						 <div class="modal-header">
+						   <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+						   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						     <span aria-hidden="true">&times;</span>
+						   </button>
+						 </div>
+						 <div class="modal-body">
+						   <div id="resultvisualisation_2_daily"></div>
+						 </div>
+						 <div class="modal-footer">
+						   <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+						 </div>
+					       </div>
+					     </div>
+					   </div>
+				</div>
+                            </div> 	
                         </div>
                     </div>
                     <div id="tab3" class="tab-pane" role="tabpanel">
@@ -224,6 +292,71 @@ GROUP BY (?lang)
                                     GRAPH</p>
                                   <canvas id="myScatter"></canvas>
                             </div>
+			       <div class="code-in-visualisation col-sm-8 align-center">
+                                  <div class="card align-center collapse show mbr-fonts-style display-2" aria-labelledby="headingOne" data-parent="#graph-menu"> 
+				      <div class="card-header">The SPARQL query</div>
+					  <div class="card-body">
+						  <h5 class="card-title">Question...????</h5>
+						  <p class="card-text">
+						     <pre class="pre-code"> 
+						     <code class="sql sparql-text">
+BASE &#60;http://www.europinion.com/&#62;
+PREFIX eur: &#60;http://www.europinion.com/&#62;
+
+SELECT ?tweet ?p_score ?n_score
+WHERE {
+  {&#60;2019/&#62; eur:lang ?lang.
+   ?lang eur:hasTweet ?tweet.
+   ?tweet eur:hasAvgNegative ?n_score. 
+    FILTER NOT EXISTS {?tweet eur:hasAvgPositive ?p_score}
+    BIND(("0") AS ?p_score)
+   } 
+UNION
+{
+  &#60;2019/&#62; eur:lang ?lang.
+  ?lang eur:hasTweet ?tweet.
+  ?tweet eur:hasAvgPositive ?p_score.
+    FILTER NOT EXISTS {?tweet eur:hasAvgNegative ?n_score}
+    BIND(("0") AS ?n_score)
+}
+  UNION
+  {
+  &#60;2019/&#62; eur:lang ?lang.
+  ?lang eur:hasTweet ?tweet.
+  ?tweet eur:hasAvgPositive ?p_score.
+  ?tweet eur:hasAvgNegative ?n_score. 
+}
+}
+	                                             </code>
+						     </pre>
+						  </p>
+					  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalvisualisation3" onclick="exec('visualisation_3_lang')">
+						  See the results
+					  </button>
+					</div>
+				    </div>
+
+					   <!-- Modal -->
+					   <div class="modal fade" id="modalvisualisation3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					     <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+					       <div class="modal-content">
+						 <div class="modal-header">
+						   <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+						   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						     <span aria-hidden="true">&times;</span>
+						   </button>
+						 </div>
+						 <div class="modal-body">
+						   <div id="resultvisualisation_3_lang"></div>
+						 </div>
+						 <div class="modal-footer">
+						   <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+						 </div>
+					       </div>
+					     </div>
+					   </div>
+				</div>
+                            </div> 	
                         </div>
                     </div>
                 </div>
