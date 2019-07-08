@@ -90,7 +90,7 @@
                         <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">
                             Cleaning Data</h4>
                         <p class="mbr-timeline-text mbr-fonts-style display-7">
-                            In the preprocessing phase we cleaned out links, emoji, hashtags and mentions from the full text by parsing it, so to be correctly analysed by Sentilo. Check out the <a href="code.html" style="color:white">Cleaning tab</a> in the Code subpage to learn more about the code we used for the cleaning.
+                            In the preprocessing phase we cleaned out links, emoji, hashtags and mentions from the full text by parsing it, so to be correctly analysed by Sentilo. Check out the <a href="code.html" style="color:white">Cleaning</a> tab in the Code subpage to learn more about the code we used for the cleaning.
                         </p>
                     </div>
                 </div>
@@ -146,12 +146,12 @@
                         <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">
                             Gaining Knowledge</h4>
                         <p class="mbr-timeline-text mbr-fonts-style display-7"><strong>Fuseki</strong><br><a href="https://jena.apache.org/documentation/fuseki2/" style="color:blue">Apache Jena Fuseki</a> is the SPARQL server we used to create and run SPARQL queries over our dataset. We run Fuseki as a Java web application (WAR file) by means of <a href="https://tomcat.apache.org/" style="color:blue">Apache Tomcat<a>. <br><br><strong>Sparql queries</strong><br>We provide some examples of possible SPARQL queries than the user could make to retrieve relevant information from our final knowledge graph containing the data from all the tweets. The queries focus on the core aspects of our project:<br>
-                          <ul>
+                          <ul class="mbr-timeline-text mbr-fonts-style display-7">
                             <li>the language as the criterion used for the collection of tweets;</li>
                             <li>the positive and negative score returned by Sentilo as the result of the sentiment analysis;</li>
                             <li>the quantity of tweets to make some statistics.</li>
-                          </ul><br>Check out our queries in the <a href="queries.html" style="color:white">Queries</a> subpage.   
-                        </p>
+                          </ul></p>
+                          <p class="mbr-timeline-text mbr-fonts-style display-7">Check out our queries in the <a href="queries.html" style="color:white">Queries</a> subpage.</p>
                     </div>
                 </div>
             </div>
@@ -164,7 +164,7 @@
                     <div class="timeline-text-content">
                         <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">
                             Visualising Results&nbsp;</h4>
-                        <p class="mbr-timeline-text mbr-fonts-style display-7">Finally, we used the results of the SPARQL queries to build a range of visualisations. The JavaScript library D3 [!!! ----------------------------- Insert Libraries which we really used !!!] was the main tool we used to implement interactive and dynamic visualisations. </p>
+                        <p class="mbr-timeline-text mbr-fonts-style display-7">In addition to the ten SPARQL queries that we created to explore our dataset and that you can find in the <a href="queries.html" style="color:white">"Other SPARQL queries"</a> subsection of the Queries subpage, we created and used other three SPARQL queries to build some visualisations. <br>The visualisations provide a more intuitive representation of the results of our sentiment analysis. Check them out in the <a href="queries.html" style="color:white">Queries</a> subsection of the Queries subpage. We used <a href="https://www.chartjs.org/" style="color:blue">Chart.js</a> and <a href="https://github.com/ktym/d3sparql" style="color:blue">D3SPARQL</a>, which is based on D3.js, to build the charts.</p>
                     </div>
                 </div>
             </div>
