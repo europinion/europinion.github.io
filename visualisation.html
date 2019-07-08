@@ -345,7 +345,7 @@
 	    <code class="sql sparql-text">
 PREFIX eur: &#60;http://www.europinion.com/&#62;
 
-SELECT ?tweet 
+SELECT ?tweet
 WHERE {
 ?tweet eur:hasLang "de".
 }
@@ -355,6 +355,31 @@ WHERE {
         <a href="#" class="card-link my-card-link">See the results</a>
       </div>
     </div>
+   </div>
+
+   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+     Launch demo modal
+   </button>
+
+   <!-- Modal -->
+   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered" role="document">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">&times;</span>
+           </button>
+         </div>
+         <div class="modal-body">
+           ...
+         </div>
+         <div class="modal-footer">
+           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+           <button type="button" class="btn btn-primary">Save changes</button>
+         </div>
+       </div>
+     </div>
    </div>
 
    <div class="col-sm-6 each-card">
@@ -368,13 +393,13 @@ WHERE {
 BASE &#60;http://www.europinion.com/&#62;
 PREFIX eur: &#60;http://www.europinion.com/&#62;
 
-SELECT ?tweet 
+SELECT ?tweet
 WHERE {
   &#60;2019/&#62; eur:lang &#60;2019/en/&#62;.
   &#60;2019/en/&#62; eur:hasTweet ?tweet.
 }
 	    </code>
-	   </pre>      
+	   </pre>
 	</p>
         <a href="#" class="card-link my-card-link">See the results</a>
       </div>
@@ -400,7 +425,7 @@ WHERE {
   &#60;2019/bg/&#62; eur:hasTweet ?tweet.
 }
 	    </code>
-	   </pre>      
+	   </pre>
 	</p>
         <a href="#" class="card-link my-card-link">See the results</a>
       </div>
@@ -426,7 +451,7 @@ WHERE {
 GROUP BY (?lang)
 HAVING (?tweet_count &#62; 10000)
 	    </code>
-	   </pre>      
+	   </pre>
 	</p>
         <a href="#" class="card-link my-card-link">See the results</a>
       </div>
@@ -445,15 +470,15 @@ HAVING (?tweet_count &#62; 10000)
 	    <code class="sql sparql-text">
 PREFIX eur: &#60;http://www.europinion.com/&#62;
 
-SELECT ?lang (COUNT (?tweet) AS ?tweet_count) 
+SELECT ?lang (COUNT (?tweet) AS ?tweet_count)
 WHERE {
  ?tweet eur:hasLang ?lang.
 }
 GROUP BY (?lang)
 ORDER BY DESC(?tweet_count)
-LIMIT 1 
+LIMIT 1
 	    </code>
-	   </pre>      
+	   </pre>
 	</p>
         <a href="#" class="card-link my-card-link">See the results</a>
       </div>
@@ -471,13 +496,13 @@ LIMIT 1
 BASE &#60;http://www.europinion.com/&#62;
 PREFIX eur: &#60;http://www.europinion.com/&#62;
 
-SELECT ?lang 
-(COUNT(?tweet) AS ?tweet_count) 
+SELECT ?lang
+(COUNT(?tweet) AS ?tweet_count)
 (COUNT(?e_tweet) AS ?e_tweet_count)
 (ROUND(?e_tweet_count*100/?tweet_count) AS ?percentage)
 WHERE {
   {&#60;2019/&#62; eur:lang ?lang.
-   ?lang eur:hasTweet ?tweet.} 
+   ?lang eur:hasTweet ?tweet.}
 UNION
 {
   &#60;2019/&#62; eur:lang ?lang.
@@ -490,7 +515,7 @@ HAVING (?tweet_count &#62; 10)
 ORDER BY DESC (?percentage)
 LIMIT 1
 	    </code>
-	   </pre>      
+	   </pre>
 	</p>
         <a href="#" class="card-link my-card-link">See the results</a>
       </div>
@@ -510,11 +535,11 @@ LIMIT 1
 BASE &#60;http://www.europinion.com/&#62;
 PREFIX eur: &#60;http://www.europinion.com/&#62;
 
-SELECT ?tweet ?avg_score 
+SELECT ?tweet ?avg_score
 WHERE {
   {&#60;2019/&#62; eur:lang &#60;2019/da/&#62;.
    &#60;2019/da/&#62; eur:hasTweet ?tweet.
-   ?tweet eur:hasAvgNegative ?avg_score. 
+   ?tweet eur:hasAvgNegative ?avg_score.
    FILTER NOT EXISTS {?tweet eur:hasAvgPositive ?p_score}
   }
   UNION
@@ -522,15 +547,15 @@ WHERE {
   &#60;2019/&#62; eur:lang &#60;2019/da/&#62;.
   &#60;2019/da/&#62; eur:hasTweet ?tweet.
   ?tweet eur:hasAvgPositive ?p_score.
-  ?tweet eur:hasAvgNegative ?n_score. 
+  ?tweet eur:hasAvgNegative ?n_score.
   BIND((?n_score+?p_score)/2 as ?avg_score)
   FILTER(?avg_score &#60;0)
   }
 }
 ORDER BY ASC (?avg_score)
-LIMIT 1 
+LIMIT 1
 	    </code>
-	   </pre>  
+	   </pre>
 	 </p>
         <a href="#" class="card-link my-card-link">See the results</a>
       </div>
@@ -548,14 +573,14 @@ LIMIT 1
 BASE &#60;http://www.europinion.com/&#62;
 PREFIX eur: &#60;http://www.europinion.com/&#62;
 
-SELECT ?tweet ?avg_score 
+SELECT ?tweet ?avg_score
 WHERE {
-  {?tweet eur:hasAvgNegative ?avg_score. 
+  {?tweet eur:hasAvgNegative ?avg_score.
    FILTER NOT EXISTS {?tweet eur:hasAvgPositive ?p_score}
   }
   UNION
   {?tweet eur:hasAvgPositive ?p_score.
-   ?tweet eur:hasAvgNegative ?n_score. 
+   ?tweet eur:hasAvgNegative ?n_score.
    BIND((?n_score+?p_score)/2 as ?avg_score)
    FILTER(?avg_score &#60;0)
   }
@@ -563,7 +588,7 @@ WHERE {
 ORDER BY ASC (?avg_score)
 LIMIT 1
 	    </code>
-	  </pre>        
+	  </pre>
 	</p>
         <a href="#" class="card-link my-card-link">See the results</a>
       </div>
@@ -583,13 +608,13 @@ LIMIT 1
 BASE &#60;http://www.europinion.com/&#62;
 PREFIX eur: &#60;http://www.europinion.com/&#62;
 
-SELECT ?lang 
-(COUNT(?tweet) AS ?tweet_count) 
-(COUNT(?p_tweet) AS ?positive_tweets) 
+SELECT ?lang
+(COUNT(?tweet) AS ?tweet_count)
+(COUNT(?p_tweet) AS ?positive_tweets)
 (ROUND(?positive_tweets*100/?tweet_count) AS ?percentage)
 WHERE {
   {&#60;2019/&#62; eur:lang ?lang.
-   ?lang eur:hasTweet ?tweet.} 
+   ?lang eur:hasTweet ?tweet.}
 UNION
 {
   &#60;2019/&#62; eur:lang ?lang.
@@ -600,16 +625,16 @@ UNION
 {  &#60;2019/&#62; eur:lang ?lang.
    ?lang eur:hasTweet ?p_tweet.
    ?p_tweet eur:hasAvgPositive ?p_score.
-   ?p_tweet eur:hasAvgNegative ?n_score. 
+   ?p_tweet eur:hasAvgNegative ?n_score.
    BIND((?n_score+?p_score)/2 as ?avg_score)
    FILTER(?avg_score &#62; 0)
 }
 }
 GROUP BY (?lang)
-ORDER BY DESC (?percentage) 
+ORDER BY DESC (?percentage)
 LIMIT 1
 	    </code>
-	  </pre>        
+	  </pre>
 	</p>
         <a href="#" class="card-link my-card-link">See the results</a>
       </div>
@@ -627,14 +652,14 @@ LIMIT 1
 BASE &#60;http://www.europinion.com/&#62;
 PREFIX eur: &#60;http://www.europinion.com/&#62;
 
-SELECT ?lang 
-(COUNT(?tweet) AS ?tweet_count) 
-(COUNT(?p_tweet) AS ?positive_tweets) 
+SELECT ?lang
+(COUNT(?tweet) AS ?tweet_count)
+(COUNT(?p_tweet) AS ?positive_tweets)
 (ROUND(?positive_tweets*100/?tweet_count) AS ?percentage)
-  
+
 WHERE {
   {&#60;2019/&#62; eur:lang ?lang.
-   ?lang eur:hasTweet ?tweet.} 
+   ?lang eur:hasTweet ?tweet.}
 UNION
 {
   &#60;2019/&#62; eur:lang ?lang.
@@ -645,7 +670,7 @@ UNION
 {  &#60;2019/&#62; eur:lang ?lang.
    ?lang eur:hasTweet ?p_tweet.
    ?p_tweet eur:hasAvgPositive ?p_score.
-   ?p_tweet eur:hasAvgNegative ?n_score. 
+   ?p_tweet eur:hasAvgNegative ?n_score.
    BIND((?n_score+?p_score)/2 as ?avg_score)
    FILTER(?avg_score &#62; 0)
 }
@@ -653,7 +678,7 @@ UNION
 GROUP BY (?lang)
 ORDER BY DESC (?percentage)
 	    </code>
-	  </pre>        
+	  </pre>
 	</p>
         <a href="#" class="card-link my-card-link">See the results</a>
       </div>
