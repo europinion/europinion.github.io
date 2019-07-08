@@ -35,16 +35,16 @@
   <script src="assets/eurBrain.js"></script>
 
   <script>
-    function preload(callback) {
+    function preload(file, callback) {
       var Connect = new XMLHttpRequest();
-      Connect.open("GET", "assets/results/CQ10.json", false);
+      Connect.open("GET", "assets/results/" + file + ".json", false);
       Connect.setRequestHeader("Content-Type", "text/json");
       Connect.send(null);
       var jsonFile = Connect.responseText;
       callback(JSON.parse(jsonFile));
     }
-    function exec(callback) {
-      preload(render);
+    function exec(file, callback) {
+      preload(file, render);
     }
     function render(json) {
       var config = {
@@ -194,7 +194,7 @@
 	    </code>
 	   </pre>
 	</p>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCQ1" onclick="exec()">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCQ1" onclick="exec(CQ10)">
           See the results
         </button>
       </div>
