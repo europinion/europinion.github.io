@@ -26,7 +26,6 @@ width: 50%;
  padding: 5px;
 }
 
-#visualisation_1 
-padding-top: 5px; 
-width: 60%; 
+.code-in-visualisation {
+padding: 10px; 
 }
