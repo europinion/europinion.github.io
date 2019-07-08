@@ -702,6 +702,7 @@ blockquote {
 pre {
   background: #ffffff;
   white-space: pre-wrap;
+  overflow: hidden;
 }
 .inactive {
   -webkit-user-select: none;
