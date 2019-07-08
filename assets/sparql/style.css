@@ -15,6 +15,7 @@ width: 50%;
 
 .card-body {
 height: 100%; 
+padding: 0; 
 }
 
 .sparql-text {
@@ -39,8 +40,6 @@ height: 100%;
 .code-in-visualisation {
 padding-top: 5vh;
 padding-bottom: 0;
-padding-right: 10vw;
-padding-left: 10vw;
 }
 
 .modal-body {
