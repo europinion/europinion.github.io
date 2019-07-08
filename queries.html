@@ -289,7 +289,7 @@
                             <div class="col-md-12">
                                 <p class="mbr-text py-5 mbr-fonts-style display-7">
                                     GRAPH</p>
-                                  <canvas id="myScatter"></canvas>
+                                  <canvas id="fig3"></canvas>
                             </div>
 			       <div class="code-in-visualisation col-md-12">
                                   <div class="card align-center collapse show mbr-fonts-style display-2" aria-labelledby="headingOne" data-parent="#graph-menu">
@@ -974,17 +974,16 @@
   <script src="assets/theme/js/script.js"></script>
 
   <script>
-    function v3Chart() {
+    function fig3Chart() {
         scatterChartData = {
             datasets: [{
-                label: 'My First dataset',
                 data: JSON.parse(this.responseText),
                 pointBackgroundColor: 'rgba(0,51,153,0.3)',
                 pointBorderColor: 'rgba(0,51,153,0.3)',
             }]
         };
-        var ctx = document.getElementById('myScatter').getContext('2d');
-        window.myScatter = Chart.Scatter(ctx, {
+        var ctx = document.getElementById('fig3').getContext('2d');
+        window.fig3 = Chart.Scatter(ctx, {
         data: scatterChartData,
         options: {
           legend: {
@@ -992,7 +991,7 @@
           }
           title: {
             display: true,
-            text: 'Chart.js Scatter Chart'
+            text: 'Ambiguity of Tweet Sentiments'
           },
           scales: {
               xAxes: [{
@@ -1015,7 +1014,7 @@
     }
 
     var oReq = new XMLHttpRequest();
-    oReq.addEventListener("load", v3Chart);
+    oReq.addEventListener("load", fig3Chart);
     oReq.open("GET", "assets/visualisations/v3.txt");
     oReq.send();
   </script>
