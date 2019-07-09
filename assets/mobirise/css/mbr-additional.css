@@ -8,8 +8,9 @@
 }
 
 @media only screen 
-  and (max-device-width: 812px) { 
-	.col-12, .col-l-12, .col-md-12, .container {
+  and (max-device-width: 850px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+	body {
 	  padding-left: 15px;
 	  padding-right: 15px;
 	}
