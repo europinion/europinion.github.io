@@ -7,6 +7,14 @@
   padding-right: 0;
 }
 
+@media only screen 
+  and (max-device-width: 812px) { 
+	.col-12, .col-l-12, .col-md-12, .container {
+	  padding-left: 15px;
+	  padding-right: 15px;
+	}
+}
+
 body {
   font-style: normal;
   line-height: 1.5;
