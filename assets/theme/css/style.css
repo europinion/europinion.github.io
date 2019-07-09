@@ -186,7 +186,8 @@ figure[mbr-media-size] {
 
 .card {
   background-color: transparent;
-  border: none; }
+  border: none;
+  width: 100% }
 
 .card-box {
   width: 100%; }
