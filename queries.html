@@ -140,7 +140,7 @@
 					  <div class="card-body">
 						  <h5 class="card-title">Which is the average positive and average negative score for each language?</h5>
 						  <p class="card-text">
-						     <pre class="pre-code">
+						     <pre>
 						     <code class="sql sparql-text">
   BASE &#60;http://www.europinion.com/&#62;
   PREFIX eur: &#60;http://www.europinion.com/&#62;
@@ -222,7 +222,7 @@
 					  <div class="card-body">
 						  <h5 class="card-title">How did emotions and interest change over time after the elections?</h5>
 						  <p class="card-text">
-						     <pre class="pre-code">
+						     <pre>
 						     <code class="sql sparql-text">
   BASE &#60;http://www.europinion.com/&#62;
   PREFIX eur: &#60;http://www.europinion.com/&#62;
@@ -300,7 +300,7 @@
 					  <div class="card-body">
 						  <h5 class="card-title">Which is the average negative and average positive score for each individual tweet?</h5>
 						  <p class="card-text">
-						     <pre class="pre-code">
+						     <pre>
 						     <code class="sql sparql-text">
   BASE &#60;http://www.europinion.com/&#62;
   PREFIX eur: &#60;http://www.europinion.com/&#62;
@@ -391,8 +391,8 @@
       <div class="card-header">CQ1</div>
       <div class="card-body">
         <h5 class="card-title">Which tweets have "de" identified as language by Twitter?</h5>
-        <p class="card-text">
-	   <pre class="pre-code">
+
+    <pre>
 	    <code class="sql sparql-text">
   PREFIX eur: &#60;http://www.europinion.com/&#62;
 
@@ -401,8 +401,7 @@
   ?tweet eur:hasLang "de".
   }
 	    </code>
-	   </pre>
-	</p>
+    </pre>
 	</div>
         <div class="card-footer"><button type="button" class="btn btn-primary button-card" data-toggle="modal" data-target="#modalCQ1" onclick="exec('CQ1')">
           See the results
@@ -432,11 +431,11 @@
 
    <div class="col-sm-6 d-flex each-card">
     <div class="card" id="CQ2">
-      <div class="card-header">CQ2</div>
+      <div class="card-header">CQ2
+      </div>
       <div class="card-body">
         <h5 class="card-title">Which tweets have the language set to "en"?</h5>
-        <p class="card-text">
-	  <pre class="pre-code">
+	  <pre>
 	    <code class="sql sparql-text">
   BASE &#60;http://www.europinion.com/&#62;
   PREFIX eur: &#60;http://www.europinion.com/&#62;
@@ -448,7 +447,6 @@
   }
 	    </code>
 	   </pre>
-	</p>
 	</div>
         <div class="card-footer"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCQ2" onclick="exec('CQ2')">
           See the results
@@ -482,9 +480,8 @@
     <div class="card" id="CQ3">
       <div class="card-header">CQ3</div>
       <div class="card-body">
-        <h5 class="card-title">How many tweets have been tweeted in “bg”?</h5>
-        <p class="card-text">
-	<pre class="pre-code">
+      <h5 class="card-title">How many tweets have been tweeted in “bg”?</h5>
+	<pre>
 	    <code class="sql sparql-text">
   BASE &#60;http://www.europinion.com/&#62;
   PREFIX eur: &#60;http://www.europinion.com/&#62;
@@ -496,7 +493,6 @@
   }
 	    </code>
 	   </pre>
-  	</p>
   </div>
         <div class="card-footer"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCQ3" onclick="exec('CQ3')">
           See the results
@@ -530,8 +526,7 @@
       <div class="card-header">CQ4</div>
       <div class="card-body">
         <h5 class="card-title">Which languages have more than 10000 tweets?</h5>
-        <p class="card-text">
-	  <pre class="pre-code">
+	  <pre>
 	    <code class="sql sparql-text">
   BASE &#60;http://www.europinion.com/&#62;
   PREFIX eur: &#60;http://www.europinion.com/&#62;
@@ -545,14 +540,12 @@
   HAVING (?tweet_count &#62; 10000)
 	    </code>
 	   </pre>
-	</p>
 </div>
         <div class="card-footer"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCQ4" onclick="exec('CQ4')">
           See the results
         </button></div>
         </div>
   </div>
-</div>
 
 <!-- Modal -->
 <div class="modal fade" id="modalCQ4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -573,7 +566,7 @@
     </div>
   </div>
 </div>
-
+</div>
 
 <div class="row card-row">
    <div class="col-sm-6 d-flex each-card">
@@ -581,8 +574,7 @@
       <div class="card-header">CQ5</div>
       <div class="card-body">
         <h5 class="card-title">In which of the languages identified by Twitter people tweeted more?</h5>
-        <p class="card-text">
-	  <pre class="pre-code">
+	  <pre>
 	    <code class="sql sparql-text">
   PREFIX eur: &#60;http://www.europinion.com/&#62;
 
@@ -595,7 +587,6 @@
   LIMIT 1
 	    </code>
 	   </pre>
-	</p>
   </div>
         <div class="card-footer"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCQ5" onclick="exec('CQ5')">
           See the results
@@ -628,8 +619,7 @@
       <div class="card-header">CQ6</div>
       <div class="card-body">
         <h5 class="card-title">Which language among the ones that received more than 10,000 tweets has used the highest number of emojis?</h5>
-        <p class="card-text">
-	<pre class="pre-code">
+	<pre>
 	    <code class="sql sparql-text">
   BASE &#60;http://www.europinion.com/&#62;
   PREFIX eur: &#60;http://www.europinion.com/&#62;
@@ -654,7 +644,6 @@
   LIMIT 1
 	    </code>
 	   </pre>
-	</p>
   </div>
         <div class="card-footer"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCQ6" onclick="exec('CQ6')">
           See the results
@@ -689,8 +678,7 @@
       <div class="card-header">CQ7</div>
       <div class="card-body">
         <h5 class="card-title">Which tweet with 'lang' set to 'da' has the highest average negative score?</h5>
-        <p class="card-text">
-	      <pre class="pre-code">
+	      <pre>
 	    <code class="sql sparql-text">
   BASE &#60;http://www.europinion.com/&#62;
   PREFIX eur: &#60;http://www.europinion.com/&#62;
@@ -716,7 +704,6 @@
   LIMIT 1
 	    </code>
 	   </pre>
-	 </p>
 	</div>
         <div class="card-footer"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCQ7" onclick="exec('CQ7')">
           See the results
@@ -750,8 +737,7 @@
       <div class="card-header">CQ8</div>
       <div class="card-body">
         <h5 class="card-title">Which tweet has the highest average negative score?</h5>
-        <p class="card-text">
-	  <pre class="pre-code">
+	  <pre>
 	    <code class="sql sparql-text">
   BASE &#60;http://www.europinion.com/&#62;
   PREFIX eur: &#60;http://www.europinion.com/&#62;
@@ -772,7 +758,6 @@
   LIMIT 1
 	    </code>
 	  </pre>
-	</p>
 	</div>
         <div class="card-footer"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCQ8" onclick="exec('CQ8')">
           See the results
@@ -807,8 +792,7 @@
      <div class="card-header">CQ9</div>
       <div class="card-body">
         <h5 class="card-title">Which language expressed the highest percentage of average positive tweets?</h5>
-        <p class="card-text">
-	  <pre class="pre-code">
+	  <pre>
 	    <code class="sql sparql-text">
   BASE &#60;http://www.europinion.com/&#62;
   PREFIX eur: &#60;http://www.europinion.com/&#62;
@@ -842,7 +826,6 @@
   LIMIT 1
 	    </code>
 	  </pre>
-	</p>
 	</div>
         <div class="card-footer"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCQ9" onclick="exec('CQ9')">
           See the results
@@ -875,8 +858,7 @@
       <div class="card-header">CQ10</div>
       <div class="card-body">
         <h5 class="card-title">Which is the percentage (rounded to its integer) of average positive tweets for each language?</h5>
-        <p class="card-text">
-	  <pre class="pre-code">
+	  <pre>
 	    <code class="sql sparql-text">
   BASE &#60;http://www.europinion.com/&#62;
   PREFIX eur: &#60;http://www.europinion.com/&#62;
@@ -910,7 +892,6 @@
   ORDER BY DESC (?percentage)
 	    </code>
 	  </pre>
-	</p>
 	</div>
         <div class="card-footer"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCQ10" onclick="exec('CQ10')">
           See the results
