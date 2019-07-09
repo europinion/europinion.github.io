@@ -130,7 +130,8 @@
                     <div id="tab1" class="tab-pane in active" role="tabpanel">
                         <div class="row">
                             <div class="col-md-12">
-                                <p class="mbr-text py-3 mbr-fonts-style display-7">The following figure grounds on the question: Which is the average positive and average negative score for each language? This question derives from the research interest in the matter, whether based on the public opinion expressed in Tweets, it can be inferred, how a milieu has perceived the political event. As the data shows, there are slight differences in the expressed opinion and a stronger like/dislike regarding the election outcome can be assumed. However, caution is required because cultures see the public expression of strong emotions very differently. A direct correlation between public outspeak and the perception is not necessarily provided.</p>
+                              <h3 class="mbr-section-subtitle align-center py-3 mbr-light mbr-fonts-style display-5">Average Pos/Neg Sentiment per Language</h3>
+                                <p class="mbr-text pb-3 mbr-fonts-style display-7">The following figure grounds on the question: Which is the average positive and average negative score for each language? This question derives from the research interest in the matter, whether based on the public opinion expressed in Tweets, it can be inferred, how a milieu has perceived the political event. As the data shows, there are slight differences in the expressed opinion and a stronger like/dislike regarding the election outcome can be assumed. However, caution is required because cultures see the public expression of strong emotions very differently. A direct correlation between public outspeak and the perception is not necessarily provided.</p>
                                 <p class="mbr-text py-3 mbr-fonts-style display-7">
                                 <canvas id="fig1"></canvas>
                               </p>
@@ -211,7 +212,8 @@
                     <div id="tab2" class="tab-pane" role="tabpanel">
                         <div class="row">
                             <div class="col-md-12">
-                              <p class="mbr-text py-3 mbr-fonts-style display-7">The second visualisation focuses on how the debate on Twitter has transformed over time. The guiding question for the query was: How did emotions and interest change over time after the elections? The hypothesis for this question is the assumption the interest would decline rapidly, and the discussion would become more neutral. The data shows how the interest indeed declined. Already on the second day, only half of the number of Tweets imminent. Already on the second day, only half of the number of Tweets were sent. Further, after the third day, the amount stagnated around 1.000 tweets. The average sentiment was always slightly more positive and had not become more neutral as assumed.</p>
+                              <h3 class="mbr-section-subtitle align-center py-3 mbr-light mbr-fonts-style display-5">Development of Sentiment and Involvement</h3>
+                              <p class="mbr-text pb-3 mbr-fonts-style display-7">The second visualisation focuses on how the debate on Twitter has transformed over time. The guiding question for the query was: How did emotions and interest change over time after the elections? The hypothesis for this question is the assumption the interest would decline rapidly, and the discussion would become more neutral. The data shows how the interest indeed declined. Already on the second day, only half of the number of Tweets imminent. Already on the second day, only half of the number of Tweets were sent. Further, after the third day, the amount stagnated around 1.000 tweets. The average sentiment was always slightly more positive and had not become more neutral as assumed.</p>
                                 <p class="mbr-text py-3 mbr-fonts-style display-7">
                                   <canvas id="fig2"></canvas>
                                 </p>
@@ -289,7 +291,8 @@
                     <div id="tab3" class="tab-pane" role="tabpanel">
                         <div class="row">
                             <div class="col-md-12">
-                                <p class="mbr-text py-3 mbr-fonts-style display-7">The last graph represents to what degree Tweets are two-sided or one-sided in regards to their sentiment. The query followed the descriptive question: Which is the average negative and average positive score for each tweet? We intended to understand whether statements in Tweets are usually either strongly negative or strongly positive or if they typically are relatively neutral. The result shows a tendency of the tweets to be eighter strongly one-sided or two-sided. Tweets which are strongly two-sided, do exist but are outliers. This phenomenon might be due to the length of tweets in which there is no space to express multiple positions.</p>
+                              <h3 class="mbr-section-subtitle align-center py-3 mbr-light mbr-fonts-style display-5">Ambiguity of Tweets</h3>
+                              <p class="mbr-text pb-3 mbr-fonts-style display-7">The last graph represents to what degree Tweets are two-sided or one-sided in regards to their sentiment. The query followed the descriptive question: Which is the average negative and average positive score for each tweet? We intended to understand whether statements in Tweets are usually either strongly negative or strongly positive or if they typically are relatively neutral. The result shows a tendency of the tweets to be eighter strongly one-sided or two-sided. Tweets which are strongly two-sided, do exist but are outliers. This phenomenon might be due to the length of tweets in which there is no space to express multiple positions.</p>
                                 <p class="mbr-text py-3 mbr-fonts-style display-7">
                                     <canvas id="fig3"></canvas></p>
                             </div>
@@ -974,7 +977,7 @@
             display: false,
           },
           title: {
-            display: true,
+            display: false,
             text: 'Ambiguity of Tweets',
             fontSize: 20
           },
@@ -1028,7 +1031,7 @@
 
 		var options = {
 					title: {
-						display: true,
+						display: false,
 						text: 'Average Pos/Neg Sentiment per Language',
             fontSize: 20
 					},
@@ -1088,7 +1091,7 @@
             options: {
                 responsive: true,
                 title: {
-                    display: true,
+                    display: false,
                     text: 'Development of Sentiment and Involvement',
                     fontSize: 20
                 },
