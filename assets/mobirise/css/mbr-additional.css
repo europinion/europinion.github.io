@@ -2,7 +2,10 @@
 
 
 
-
+.col-12, .col-l-12, .col-md-12, .container {
+  padding-left: 0;
+  padding-right: 0;
+}
 
 body {
   font-style: normal;
