@@ -100,7 +100,7 @@ body {
   -webkit-justify-content: center;
   display: -webkit-inline-flex;
   padding: 1rem 3rem;
-  border-radius: 3px;
+  border-radius:  100px;
 }
 .btn-sm {
   font-weight: 500;
