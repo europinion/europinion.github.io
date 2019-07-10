@@ -118,7 +118,7 @@
                 <div class="col-xs-12 col-md-6 align-left ">
                     <div class="timeline-text-content">
                         <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">Analysing Sentiment</h4>
-                        <p class="mbr-timeline-text mbr-fonts-style display-7">The tool we used to perform the sentiment analysis is called <a href="http://wit.istc.cnr.it/stlab-tools/sentilo/index.html" class="text-info" target="_blank">Sentilo</a>. Sentilo performs sentence-based sentiment analysis. It takes a sentence as input as gives you back the positive or negative and average score. Additionally, Sentilo relies on <a href="http://wit.istc.cnr.it/stlab-tools/fred/" class="text-info" target="_blank">FRED</a> to automatically mine a knowledge graph for the sentence. FRED is a succesful machine reader for the Semantic Web. The knowledge graphs is given back in various possible formats, such as png, rdf, xml, json, turtle, N3, NT.  <br>Our problem concerned finding a way to analyse in an automatic way the parsed text of every tweet we had previously collected. For this reason, we created a script to send a get request to sentilo with the tweet to get back the knowledge graph. Check the script in the <a href="code.html" style="color:white">Analysing</a> tab under our Code subpage.</p>
+                        <p class="mbr-timeline-text mbr-fonts-style display-7">The tool we used to perform the sentiment analysis is called <a href="http://wit.istc.cnr.it/stlab-tools/sentilo/index.html" class="text-info" target="_blank">Sentilo</a>. Sentilo performs sentence-based sentiment analysis. It takes a sentence as input as gives you back the positive or negative and average score. Additionally, Sentilo relies on <a href="http://wit.istc.cnr.it/stlab-tools/fred/" class="text-info" target="_blank">FRED</a> to automatically mine a knowledge graph for the sentence. FRED is a succesful machine reader for the Semantic Web. The knowledge graphs are given back in various possible formats, such as png, rdf, xml, json, turtle, N3, NT.  <br>Our problem concerned finding a way to analyse in an automatic way the parsed text of every tweet we had previously collected. For this reason, we created a script to send a get request to Sentilo with the tweet to get back the knowledge graph. Check the script in the <a href="code.html" style="color:white">Analysing</a> tab under our Code subpage.</p>
                     </div>
                 </div>
             </div>
@@ -145,12 +145,14 @@
                     <div class="timeline-text-content">
                         <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">
                             Gaining Knowledge</h4>
-                        <p class="mbr-timeline-text mbr-fonts-style display-7"><strong>Fuseki</strong><br><a href="https://jena.apache.org/documentation/fuseki2/" class="text-info" target="_blank">Apache Jena Fuseki</a> is the SPARQL server we used to create and run SPARQL queries over our dataset. We run Fuseki as a Java web application (WAR file) by means of <a href="https://tomcat.apache.org/" class="text-info" target="_blank">Apache Tomcat<a>. <br><br><strong>Sparql queries</strong><br>We provide some examples of possible SPARQL queries than the user could make to retrieve relevant information from our final knowledge graph containing the data from all the tweets. The queries focus on the core aspects of our project:<br>
+                        <p class="mbr-timeline-text mbr-fonts-style display-7"><strong>Fuseki</strong><br><a href="https://jena.apache.org/documentation/fuseki2/" class="text-info" target="_blank">Apache Jena Fuseki</a> is the SPARQL server we used to create and run SPARQL queries over our dataset. We run Fuseki as a Java web application (WAR file) by means of <a href="https://tomcat.apache.org/" class="text-info" target="_blank">Apache Tomcat<a>. <br><br><strong>Sparql queries</strong><br>We provide some examples of possible SPARQL queries, which the user could make to retrieve relevant information from our final knowledge graph containing the data from all the tweets. The queries focus on the core aspects of our project:<br>
                           <ul class="mbr-timeline-text mbr-fonts-style display-7">
                             <li>the language as the criterion used for the collection of tweets;</li>
                             <li>the positive and negative score returned by Sentilo as the result of the sentiment analysis;</li>
-                            <li>the quantity of tweets to make some statistics.</li><p>Check out our queries in the <a href="queries.html" style="color:white">Queries</a> subpage.</p>
-                          </ul></p>
+                            <li>the quantity of tweets to make some statistics.</li>
+                          </ul>
+                        Check out our queries in the <a href="queries.html" style="color:white">Queries</a> subpage.
+                      </p>
                     </div>
                 </div>
             </div>
