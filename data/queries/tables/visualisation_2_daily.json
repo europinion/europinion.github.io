@@ -1,0 +1,51 @@
+{
+  "head": {
+    "vars": [ "date" , "tweet_count" , "tot_avg_score" , "daily_avg_score" ]
+  } ,
+  "results": {
+    "bindings": [
+      {
+        "date": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2019-05-27" } ,
+        "tweet_count": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "value": "8904" } ,
+        "tot_avg_score": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#double" , "value": "838.5493016691717e0" } ,
+        "daily_avg_score": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#double" , "value": "0.09417669605448918e0" }
+      } ,
+      {
+        "date": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2019-05-28" } ,
+        "tweet_count": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "value": "4699" } ,
+        "tot_avg_score": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#double" , "value": "422.05418625541057e0" } ,
+        "daily_avg_score": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#double" , "value": "0.08981787321885733e0" }
+      } ,
+      {
+        "date": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2019-05-29" } ,
+        "tweet_count": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "value": "2553" } ,
+        "tot_avg_score": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#double" , "value": "235.02192822871598e0" } ,
+        "daily_avg_score": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#double" , "value": "0.092057159509877e0" }
+      } ,
+      {
+        "date": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2019-05-30" } ,
+        "tweet_count": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "value": "1856" } ,
+        "tot_avg_score": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#double" , "value": "160.26978055555549e0" } ,
+        "daily_avg_score": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#double" , "value": "0.08635225245450187e0" }
+      } ,
+      {
+        "date": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2019-05-31" } ,
+        "tweet_count": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "value": "1320" } ,
+        "tot_avg_score": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#double" , "value": "95.37689404761909e0" } ,
+        "daily_avg_score": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#double" , "value": "0.0722552227633478e0" }
+      } ,
+      {
+        "date": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2019-06-01" } ,
+        "tweet_count": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "value": "906" } ,
+        "tot_avg_score": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#double" , "value": "66.66875198412737e0" } ,
+        "daily_avg_score": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#double" , "value": "0.073585818967028e0" }
+      } ,
+      {
+        "date": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2019-06-02" } ,
+        "tweet_count": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "value": "1177" } ,
+        "tot_avg_score": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#double" , "value": "69.10720773809545e0" } ,
+        "daily_avg_score": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#double" , "value": "0.05871470496014907e0" }
+      }
+    ]
+  }
+}
