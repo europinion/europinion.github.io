@@ -1,0 +1,14 @@
+{
+  "head": {
+    "vars": [ "tweet" , "avg_score" , "trans" ]
+  } ,
+  "results": {
+    "bindings": [
+      {
+        "tweet": { "type": "uri" , "value": "http://www.europinion.com/2019/pt/340" } ,
+        "avg_score": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#double" , "value": "-0.931e0" } ,
+        "trans": { "type": "literal" , "value": "Europe: Jerome speaks of the result as particularly negative for the employees" }
+      }
+    ]
+  }
+}

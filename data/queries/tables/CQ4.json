@@ -1,0 +1,13 @@
+{
+  "head": {
+    "vars": [ "lang" , "tweet_count" ]
+  } ,
+  "results": {
+    "bindings": [
+      {
+        "lang": { "type": "uri" , "value": "http://www.europinion.com/2019/de/" } ,
+        "tweet_count": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "value": "10784" }
+      }
+    ]
+  }
+}

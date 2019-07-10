@@ -1,0 +1,15 @@
+{
+  "head": {
+    "vars": [ "lang" , "tweet_count" , "e_tweet_count" , "percentage" ]
+  } ,
+  "results": {
+    "bindings": [
+      {
+        "lang": { "type": "uri" , "value": "http://www.europinion.com/2019/fr/" } ,
+        "tweet_count": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "value": "1827" } ,
+        "e_tweet_count": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "value": "253" } ,
+        "percentage": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#decimal" , "value": "14" }
+      }
+    ]
+  }
+}
