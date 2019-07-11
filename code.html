@@ -300,7 +300,6 @@ w<!DOCTYPE html>
 
 
   ### Triggering the Chain of Functions ###
- packaging(lastSuccess)
   for file in filenames:
       ### Two types of files:
 
@@ -312,8 +311,9 @@ w<!DOCTYPE html>
       df = pd.read_csv(file, delimiter = ";", encoding="utf-8", skiprows=1, names = ["created_at", "lang", "screen_name", "location", "full_text", "urls", "tags", "mentions", "retweet_count", "favorite_count", "parsed_text", "emoji", "english"])
 
       ### NEW FILE – leave brackets blank: packaging()
-      ### OLD FILE – input is lastSuccess: packaging(lastSuccess)
       packaging()
+      ### OLD FILE – input is lastSuccess: packaging(lastSuccess)
+      packaging(lastSuccess)
                                   </code>
                               </pre>
                             </div>
